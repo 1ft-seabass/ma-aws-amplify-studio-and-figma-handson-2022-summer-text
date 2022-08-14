@@ -1,0 +1,483 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Figma の準備 · タイトル</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07-figma-amplify-studio-setting.html" />
+    
+    
+    <link rel="prev" href="05-amplify-studio-setting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00-preparation.html">
+            
+                <a href="00-preparation.html">
+            
+                    
+                    事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-cloud9-create.html">
+            
+                <a href="02-cloud9-create.html">
+            
+                    
+                    Cloud9 の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-amplify-create.html">
+            
+                <a href="03-amplify-create.html">
+            
+                    
+                    Amplify の初期設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-amplify-studio-setup.html">
+            
+                <a href="04-amplify-studio-setup.html">
+            
+                    
+                    Amplify Studio の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-amplify-studio-setting.html">
+            
+                <a href="05-amplify-studio-setting.html">
+            
+                    
+                    Amplify Studio の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="06-figma-setup.html">
+            
+                <a href="06-figma-setup.html">
+            
+                    
+                    Figma の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="07-figma-amplify-studio-setting.html">
+            
+                <a href="07-figma-amplify-studio-setting.html">
+            
+                    
+                    Amplify Studio の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Figma の準備</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="figma-の準備"><a name="figma-の準備" class="plugin-anchor" href="#figma-の準備"><i class="fa fa-link" aria-hidden="true"></i></a>Figma の準備</h1>
+<p>Figma で Amplify からデータを入れるひな形をつくります。</p>
+<h2 id="ズームの調整"><a name="ズームの調整" class="plugin-anchor" href="#ズームの調整"><i class="fa fa-link" aria-hidden="true"></i></a>ズームの調整</h2>
+<p>今後の作業をしやすいようにズームを調整します。</p>
+<p><img src="https://i.gyazo.com/48f778e041148b9367d7374faf2e568a.png" alt="image"></p>
+<p>Ctrl + マウススクロール で、デフォルトで入っている Frame 群がこれくらいの大きさで収まるように、調整します。</p>
+<p><img src="https://i.gyazo.com/a0aa7db72840a479c764eedef8b904c6.png" alt="image"></p>
+<p>右上のズーム設定をクリックして 25 % くらいに設定しても良いでしょう。</p>
+<h2 id="frame-の作成と調整"><a name="frame-の作成と調整" class="plugin-anchor" href="#frame-の作成と調整"><i class="fa fa-link" aria-hidden="true"></i></a>Frame の作成と調整</h2>
+<p><img src="https://i.gyazo.com/c6fc729932010da1f330154508966ca4.png" alt="image"></p>
+<p>ヘッダーの＃ボタンをクリックし Frame になっているかを確認します。</p>
+<p><img src="https://i.gyazo.com/df1dfcdc3d07ff70dccf11bf0afb5b6a.png" alt="image"></p>
+<p>画面上の空いているスペースにクリックして 100 x 100 の大きさの Frame をつくります。</p>
+<p>この Frame をクリックして選択した状態にします。通常、作成した瞬間は選択されています。</p>
+<p><img src="https://i.gyazo.com/829981d84b88e7bab456731756b70644.png" alt="image"></p>
+<p>右側の Design 設定の画面で Frame の項目の W 100 H 100 となっているところを注目します。</p>
+<p><img src="https://i.gyazo.com/4e48a5bd26c4f5ab894463b9a23219ac.png" alt="image"></p>
+<p>100 の値をクリックすると編集できるので W 300 H 200 と設定します。</p>
+<p><img src="https://i.gyazo.com/1af3b81d13232cc3a53fb55d1156db23.png" alt="image"></p>
+<p>Frame の見た目も 300 x 200 に大きさが反映されました。</p>
+<h2 id="zoom-to-selection"><a name="zoom-to-selection" class="plugin-anchor" href="#zoom-to-selection"><i class="fa fa-link" aria-hidden="true"></i></a>Zoom to selection</h2>
+<p><img src="https://i.gyazo.com/91aa004963c01eed84b557a8575c3c68.png" alt="image"></p>
+<p>このあと Frame 内の作業をするので Frame を選択した状態で Shift + 2 をするか、右上のメニューから View &gt; Zoom to selection して Frame に対してズームします。</p>
+<p><img src="https://i.gyazo.com/0b44ae6c881b31e794025e9aeddbc149.png" alt="image"></p>
+<p>このようにズームされます。</p>
+<h2 id="image-の作成と調整"><a name="image-の作成と調整" class="plugin-anchor" href="#image-の作成と調整"><i class="fa fa-link" aria-hidden="true"></i></a>Image の作成と調整</h2>
+<p><img src="https://i.gyazo.com/e648d2086f38867104cd172e8ebef1bf.jpg" alt="image"></p>
+<p>今回使う画像です。こちらの画像を Chrome ブラウザで右クリックして <code>画像をコピー</code> を行っておきます。クリップボードに画像が記録されました。</p>
+<p><img src="https://i.gyazo.com/e3759d827c63470b76a3321e9fb5b6d4.png" alt="image"></p>
+<p>Frame 外のこのあたりを右クリックして Paste here をクリックします。</p>
+<p><img src="https://i.gyazo.com/3392263f8a681048a241ba9350b699e5.png" alt="image"></p>
+<p>初回ですとクリップボードからのデータのペーストは許可が必要なので許可しましょう。</p>
+<p><img src="https://i.gyazo.com/ebb557f3dc7d0ccc6d9fca0ded135dd0.png" alt="image"></p>
+<p>初回許可した時に、ペーストが不発になる場合があります。</p>
+<p><img src="https://i.gyazo.com/807c4d8ba8e1b6768ee40ddd9d6d62bd.png" alt="image"></p>
+<p>そのときはブラウザをリロードして、</p>
+<p><img src="https://i.gyazo.com/1af3b81d13232cc3a53fb55d1156db23.png" alt="image"></p>
+<p>今回の Frame を選択したあと、再度 Shift + 2 で Frame にズームします。</p>
+<p><img src="https://i.gyazo.com/e3759d827c63470b76a3321e9fb5b6d4.png" alt="image"></p>
+<p>もう一度 Frame 外のこのあたりを右クリックして Paste here をクリックします。</p>
+<p><img src="https://i.gyazo.com/77e90ca5a63b9c0fb755880ee78c44d5.jpg" alt="image"></p>
+<p>このようにペーストされれば OK です。</p>
+<p><img src="https://i.gyazo.com/1c512635464f622fbe8150e1a9899789.jpg" alt="image"></p>
+<p>画像をクリックして選択し、マウスで動かして、Frame の左上に持っていくと吸着するのでマウスを離して配置します。</p>
+<h2 id="text-の作成と調整"><a name="text-の作成と調整" class="plugin-anchor" href="#text-の作成と調整"><i class="fa fa-link" aria-hidden="true"></i></a>Text の作成と調整</h2>
+<h3 id="title"><a name="title" class="plugin-anchor" href="#title"><i class="fa fa-link" aria-hidden="true"></i></a>Title</h3>
+<p><img src="https://i.gyazo.com/39451ea4478ecad1adcc218d722a3236.png" alt="image"></p>
+<p>ヘッダーの T ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/dbb749cac287b24e676ae74f308e9634.jpg" alt="image"></p>
+<p>画像の左下からマウスをドラッグして 300 x 50 になるまで引っ張ってマウスを離します。</p>
+<p><img src="https://i.gyazo.com/7c90020866ca108ccede2bedf3e2e1dd.jpg" alt="image"></p>
+<p>入力を半角英数モードにして Title と入力して Frame 外をクリックして入力を終わります。</p>
+<p><img src="https://i.gyazo.com/3a1fd1d6aab65626e414b461f0dea759.jpg" alt="image"></p>
+<p>このように Text オブジェクトが Title をいう文字が入力されて 300 x 50 の大きさで画像のすぐ下に密着した形で配置していれば OK です。</p>
+<h3 id="description"><a name="description" class="plugin-anchor" href="#description"><i class="fa fa-link" aria-hidden="true"></i></a>Description</h3>
+<p><img src="https://i.gyazo.com/e5c74cfa8e89d30bdda5b5582ee318d7.jpg" alt="image"></p>
+<p>同じ操作で、Title の下に Description という Text オブジェクトを作成します。</p>
+<p>コツとしては、最初の作成時には Title 直下に密着するかは気にせずに、まず 300 x 50 の大きさで Description のオブジェクトを作った後に、吸着機能を利用して、再度マウスで移動して Title の下に密着配置させるのがよいでしょう。</p>
+<h2 id="コンポーネント化"><a name="コンポーネント化" class="plugin-anchor" href="#コンポーネント化"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネント化</h2>
+<p>Image ・ Title ・ Description をまとめてコンポーネント化します。</p>
+<p><img src="https://i.gyazo.com/74c176055144054cc0fefb37ea4edd79.jpg" alt="image"></p>
+<p>Shift キーを押しながら Image ・ Title ・ Description をクリックして複数選択します。左側のレイヤーでも Image ・ Title ・ Description が選択させていることを確認しましょう。</p>
+<p><img src="https://i.gyazo.com/05739bccf237703a418e7af378b7ba55.jpg" alt="image"></p>
+<p>選択した 3 オブジェクトの上で右クリックをして Create component クリックします。</p>
+<p><img src="https://i.gyazo.com/5ce8979a8a021a029cdc3b754bdc4b71.jpg" alt="image"></p>
+<p>コンポーネントになりました。</p>
+<h2 id="コンポーネントの名前を-homecard-にする"><a name="コンポーネントの名前を-homecard-にする" class="plugin-anchor" href="#コンポーネントの名前を-homecard-にする"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントの名前を HomeCard にする</h2>
+<p><img src="https://i.gyazo.com/bd337e24d809395e3f2d78f6781e704f.jpg" alt="image"></p>
+<p>コンポーネントの名前を示す右上テキストはダブルクリックで編集できます。</p>
+<p><img src="https://i.gyazo.com/3c6539ea55d1a9fe159a0d1016d43f8d.jpg" alt="image"></p>
+<p>ダブルクリックして編集状態にします。</p>
+<p><img src="https://i.gyazo.com/3dfc02a40add4f9648333995bf390171.png" alt="image"></p>
+<p>入力を半角英数入力にして <code>HomeCard</code> と入力して Enter キーを押します。</p>
+<p><img src="https://i.gyazo.com/56138a4297948eba99c630998b52fc09.jpg" alt="image"></p>
+<p>右上のコンポーネント名が変更出来たことと、Layers の部分でもちゃんと変更できているか確認しましょう。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-amplify-studio-setting.html" class="navigation navigation-prev " aria-label="Previous page: Amplify Studio の設定">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07-figma-amplify-studio-setting.html" class="navigation navigation-next " aria-label="Next page: Amplify Studio の設定">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Figma の準備","level":"1.8","depth":1,"next":{"title":"Amplify Studio の設定","level":"1.9","depth":1,"path":"07-figma-amplify-studio-setting.md","ref":"07-figma-amplify-studio-setting.md","articles":[]},"previous":{"title":"Amplify Studio の設定","level":"1.7","depth":1,"path":"05-amplify-studio-setting.md","ref":"05-amplify-studio-setting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"06-figma-setup.md","mtime":"2022-08-14T12:20:17.071Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-14T12:21:56.093Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

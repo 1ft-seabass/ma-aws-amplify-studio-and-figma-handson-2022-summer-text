@@ -1,0 +1,538 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Amplify Studio の設定 · タイトル</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="06-figma-setup.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00-preparation.html">
+            
+                <a href="00-preparation.html">
+            
+                    
+                    事前準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-introduction.html">
+            
+                <a href="01-introduction.html">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02-cloud9-create.html">
+            
+                <a href="02-cloud9-create.html">
+            
+                    
+                    Cloud9 の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03-amplify-create.html">
+            
+                <a href="03-amplify-create.html">
+            
+                    
+                    Amplify の初期設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="04-amplify-studio-setup.html">
+            
+                <a href="04-amplify-studio-setup.html">
+            
+                    
+                    Amplify Studio の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05-amplify-studio-setting.html">
+            
+                <a href="05-amplify-studio-setting.html">
+            
+                    
+                    Amplify Studio の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06-figma-setup.html">
+            
+                <a href="06-figma-setup.html">
+            
+                    
+                    Figma の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="07-figma-amplify-studio-setting.html">
+            
+                <a href="07-figma-amplify-studio-setting.html">
+            
+                    
+                    Amplify Studio の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Amplify Studio の設定</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="figma-と-amplify-studio-の連携"><a name="figma-と-amplify-studio-の連携" class="plugin-anchor" href="#figma-と-amplify-studio-の連携"><i class="fa fa-link" aria-hidden="true"></i></a>Figma と Amplify Studio の連携</h1>
+<p>Figma と Amplify Studio の連携を進めます。</p>
+<h2 id="figma-から-amplify-へ設定の-share"><a name="figma-から-amplify-へ設定の-share" class="plugin-anchor" href="#figma-から-amplify-へ設定の-share"><i class="fa fa-link" aria-hidden="true"></i></a>Figma から Amplify へ設定の Share</h2>
+<p><img src="https://i.gyazo.com/80de300c1294e49ee645063374fdc756.jpg" alt="image"></p>
+<p>まず、現在開いている Figma ファイルの URL をブラウザのアドレスバーからコピーします。</p>
+<p><img src="https://i.gyazo.com/c9344523e9cbb279187222c204482445.png" alt="image"></p>
+<p>Amplify の画面に戻ります。</p>
+<p><img src="https://i.gyazo.com/478ecfe7b10d5b253b4383264f473b1e.png" alt="image"></p>
+<p>Paste your Figma file link に注目します。</p>
+<p><img src="https://i.gyazo.com/70875b5e15370f5aa988fbe8c527e6d7.png" alt="image"></p>
+<p>こちらに、さきほどの Figma ファイルの URLをコピーアンドペーストして、Continue ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/84cec8ff5599ec4ac177569e2e07d8a6.png" alt="image"></p>
+<p>Amplify Atudio 側から Figma 側にアクセス許可が聞かれるので Allow access ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/70df26122c027990ba0e8b86140fdfbd.png" alt="image"></p>
+<p>Fetching from Figma と表示されてロードが開始します。</p>
+<p><img src="https://i.gyazo.com/b6544a19764ac76d9bb33ac0149fed15.png" alt="image"></p>
+<p>このように Figma theme updates と出てきたら成功です。</p>
+<p><img src="https://i.gyazo.com/06ffb828df72babe333841a1e5b73a0e.png" alt="image"></p>
+<p>Skip theme updates ボタンをクリックします。</p>
+<h2 id="コンポーネントの受け入れ"><a name="コンポーネントの受け入れ" class="plugin-anchor" href="#コンポーネントの受け入れ"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントの受け入れ</h2>
+<p>コンポーネントは HomeCard ・ NavBar ・ MarketingFooter だけ受け入れます。ほかは Reject します。</p>
+<p><img src="https://i.gyazo.com/b1884b94d49efad74c51db9b67da59d0.png" alt="image"></p>
+<p>すると HomeCard のコンポーネントの許可ページに移動するので Accept ボタンをクリックして受け入れます。</p>
+<p><img src="https://i.gyazo.com/7e78de5a20a37a8d88e026325af9b460.png" alt="image"></p>
+<p>MarketingFooter も Accept ボタンをクリックして受け入れます。</p>
+<p><img src="https://i.gyazo.com/ef86a5dadc445a46cf64ca0c6d7e1446.png" alt="image"></p>
+<p>NavBar も Accept ボタンをクリックして受け入れます。</p>
+<p><img src="https://i.gyazo.com/e51076484dd30cca6099346af8523ecd.png" alt="image"></p>
+<p>コンポーネントの受け入れ設定が終わり Save Components ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/8d617a6f7f2d23e322e2ec59852d23d7.png" alt="image"></p>
+<p>取り込みが成功して、UI Library 画面が表示されて Components に HomeCard ・ NavBar ・ MarketingFooter がいます。</p>
+<p><img src="https://i.gyazo.com/db25ddf024977de45ff07eb87629da88.jpg" alt="image"></p>
+<p>間違って Accept したものがあれば、この画面で Delete していきます。</p>
+<h2 id="content"><a name="content" class="plugin-anchor" href="#content"><i class="fa fa-link" aria-hidden="true"></i></a>Content</h2>
+<p><img src="https://i.gyazo.com/7d5c00fd904a8f111422886131cc8c47.png" alt="image"></p>
+<p>左メニューで Content をクリックします。</p>
+<p><img src="https://i.gyazo.com/8c8c2c86d712d9a880d0b1f4cf4cd252.png" alt="image"></p>
+<h3 id="auto-generate-seed-data"><a name="auto-generate-seed-data" class="plugin-anchor" href="#auto-generate-seed-data"><i class="fa fa-link" aria-hidden="true"></i></a>Auto-generate seed data</h3>
+<p>Content ページでしばらくロードを待っていると Auto-generate seed data ボタンが出てくるのでクリックします。</p>
+<p>ロードの間は、Amplify 上のデータモデルを調べています。</p>
+<p><img src="https://i.gyazo.com/265bc78544c2a75fabe8b7e1eaeaab3a.png" alt="image"></p>
+<p>自動生成するデータを 5 つ作成するので、How many rows of data do you want to generate? (1-100) のところを 5 として Generate data ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/5c5331fd07bd4541d5d80a49eef9845b.png" alt="image"></p>
+<p>データが自動作成されます。</p>
+<h3 id="imageurl-を画像-url-に置き換える"><a name="imageurl-を画像-url-に置き換える" class="plugin-anchor" href="#imageurl-を画像-url-に置き換える"><i class="fa fa-link" aria-hidden="true"></i></a>image_url を画像 URL に置き換える</h3>
+<p>データが自動作成されましたが image_url は画像 URL でないと動きません。image_url を画像 URL に置き換えます。</p>
+<p><img src="https://i.gyazo.com/47ad33564efc095868facd27952b8d9b.png" alt="image"></p>
+<p>編集したい行をクリックします。</p>
+<p><img src="https://i.gyazo.com/982de3dfec85d4d11488663cb1009299.png" alt="image"></p>
+<p>各行のデータ内容を編集します。今回は image_url を以下のサンプル画像 URL と入れ替えて、Save Home をクリックします。</p>
+<h3 id="figmatestimage01jpg"><a name="figmatestimage01jpg" class="plugin-anchor" href="#figmatestimage01jpg"><i class="fa fa-link" aria-hidden="true"></i></a>figma_test_image01.jpg</h3>
+<p><img src="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image01.jpg" alt="figma_test_image01"></p>
+<p><a href="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image01.jpg" target="_blank">https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image01.jpg</a></p>
+<h3 id="figmatestimage01jpg"><a name="figmatestimage01jpg" class="plugin-anchor" href="#figmatestimage01jpg"><i class="fa fa-link" aria-hidden="true"></i></a>figma_test_image01.jpg</h3>
+<p><img src="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image02.jpg" alt="figma_test_image02"></p>
+<p><a href="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image02.jpg" target="_blank">https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image02.jpg</a></p>
+<h3 id="figmatestimage03jpg"><a name="figmatestimage03jpg" class="plugin-anchor" href="#figmatestimage03jpg"><i class="fa fa-link" aria-hidden="true"></i></a>figma_test_image03.jpg</h3>
+<p><img src="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image03.jpg" alt="figma_test_image01"></p>
+<p><a href="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image03.jpg" target="_blank">https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image03.jpg</a></p>
+<h3 id="figmatestimage04jpg"><a name="figmatestimage04jpg" class="plugin-anchor" href="#figmatestimage04jpg"><i class="fa fa-link" aria-hidden="true"></i></a>figma_test_image04.jpg</h3>
+<p><img src="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image04.jpg" alt="figma_test_image01"></p>
+<p><a href="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image04.jpg" target="_blank">https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image04.jpg</a></p>
+<h3 id="figmatestimage05jpg"><a name="figmatestimage05jpg" class="plugin-anchor" href="#figmatestimage05jpg"><i class="fa fa-link" aria-hidden="true"></i></a>figma_test_image05.jpg</h3>
+<p><img src="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image05.jpg" alt="figma_test_image05"></p>
+<p><a href="https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image05.jpg" target="_blank">https://raw.githubusercontent.com/1ft-seabass/ma-aws-amplify-studio-and-figma-handson-2022-summer-text/master/base/images/figma_test_image05.jpg</a></p>
+<p>このように変更できていれば OK です。</p>
+<p><img src="https://i.gyazo.com/29efe86cae70f7ad80f55f5ecd715767.png" alt="image"></p>
+<h2 id="ui-コンポーネントと-content-のデータを紐付ける"><a name="ui-コンポーネントと-content-のデータを紐付ける" class="plugin-anchor" href="#ui-コンポーネントと-content-のデータを紐付ける"><i class="fa fa-link" aria-hidden="true"></i></a>UI コンポーネントと Content のデータを紐付ける</h2>
+<p><img src="https://i.gyazo.com/0f4dd5aed675a07f437011dc5f7a40dd.png" alt="image"></p>
+<p>左メニューから UI Library に移動します。</p>
+<p><img src="https://i.gyazo.com/8efbdf99b992a28f40df91844c41c173.png" alt="image"></p>
+<p>Components から HomeCard をクリックして、HomeCard が表示されたら Configure ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/a85a46c7dea5e0fd6ccc8c5f683ab228.png" alt="image"></p>
+<p>HomeCard の設定が表示されました。</p>
+<p><img src="https://i.gyazo.com/7d8afc925b588a36621bd14f209fce61.png" alt="image"></p>
+<p>Components properties のところにある Add prop をクリックします。</p>
+<p><img src="https://i.gyazo.com/34139f72417f3c9e70f348246a920180.png" alt="image"></p>
+<ul>
+<li>Name<ul>
+<li>home</li>
+</ul>
+</li>
+<li>Type<ul>
+<li>Home</li>
+</ul>
+</li>
+</ul>
+<p>と設定します。</p>
+<p><img src="https://i.gyazo.com/91d096f74e6bca4678a2449e373c8b68.png" alt="image"></p>
+<p>Elements tree で image をクリックします。</p>
+<p><img src="https://i.gyazo.com/ca5ba5e6b7ee7d1aac185d48b0681391.png" alt="image"></p>
+<p>image を選択した状態で Set prop をクリックします。</p>
+<p><img src="https://i.gyazo.com/ce0921f218f42d6b06c665ccc1c15a16.png" alt="image"></p>
+<p>内容は、</p>
+<ul>
+<li>Prop<ul>
+<li>src</li>
+</ul>
+</li>
+<li>Value<ul>
+<li>home.image_url</li>
+</ul>
+</li>
+</ul>
+<p>と設定します。</p>
+<p>つづいて Title を選択した状態で Set prop をクリックします。</p>
+<p><img src="https://i.gyazo.com/ea35ff274ebe2dbc93d2a3402ce3be1d.png" alt="image"></p>
+<p>内容は、</p>
+<ul>
+<li>Prop<ul>
+<li>label</li>
+</ul>
+</li>
+<li>Value<ul>
+<li>home.address</li>
+</ul>
+</li>
+</ul>
+<p>と設定します。</p>
+<p>つづいて Description を選択した状態で Set prop をクリックします。</p>
+<p><img src="https://i.gyazo.com/90732d5d289b0af11ee78096070b1704.png" alt="image"></p>
+<p>内容は、</p>
+<ul>
+<li>Prop<ul>
+<li>label</li>
+</ul>
+</li>
+<li>Value<ul>
+<li>home.price</li>
+</ul>
+</li>
+</ul>
+<p>と設定します。</p>
+<h2 id="コンポーネントをデータに応じて並べる-newhomes-コレクションを作成する"><a name="コンポーネントをデータに応じて並べる-newhomes-コレクションを作成する" class="plugin-anchor" href="#コンポーネントをデータに応じて並べる-newhomes-コレクションを作成する"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントをデータに応じて並べる NewHomes コレクションを作成する</h2>
+<p><img src="https://i.gyazo.com/8c85646974d193c805cb32303881987f.png" alt="image"></p>
+<p>右上にある Create collection をクリックします。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06-figma-setup.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Figma の準備">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.9","depth":1,"previous":{"title":"Figma の準備","level":"1.8","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"07-figma-amplify-studio-setting.md","mtime":"2022-08-14T12:21:07.868Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-14T12:21:56.093Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
