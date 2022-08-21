@@ -68,6 +68,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="08-react-setup-and-deploy.html" />
+    
     
     <link rel="prev" href="06-figma-setup.html" />
     
@@ -208,6 +210,45 @@
             
                     
                     Amplify Studio の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="08-react-setup-and-deploy.html">
+            
+                <a href="08-react-setup-and-deploy.html">
+            
+                    
+                    React の準備と Amplify デプロイ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-react-extend-code.html">
+            
+                <a href="09-react-extend-code.html">
+            
+                    
+                    React のコードによる拡張
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-environment-delete.html">
+            
+                <a href="10-environment-delete.html">
+            
+                    
+                    環境の削除
             
                 </a>
             
@@ -396,6 +437,32 @@
 <h2 id="コンポーネントをデータに応じて並べる-newhomes-コレクションを作成する"><a name="コンポーネントをデータに応じて並べる-newhomes-コレクションを作成する" class="plugin-anchor" href="#コンポーネントをデータに応じて並べる-newhomes-コレクションを作成する"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントをデータに応じて並べる NewHomes コレクションを作成する</h2>
 <p><img src="https://i.gyazo.com/8c85646974d193c805cb32303881987f.png" alt="image"></p>
 <p>右上にある Create collection をクリックします。</p>
+<p><img src="https://i.gyazo.com/3521db5e1942e247390930a55345a6f0.png" alt="image"></p>
+<p>コレクションの名前を NewHomes にして、Create ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/00b638c562267e89134e2ca26ca739f5.png" alt="image"></p>
+<p>あたらしく NewHomes が作成されて先ほど Content で設定したデータがプレビューとして反映されています。</p>
+<h2 id="コレクションのレイアウトの編集"><a name="コレクションのレイアウトの編集" class="plugin-anchor" href="#コレクションのレイアウトの編集"><i class="fa fa-link" aria-hidden="true"></i></a>コレクションのレイアウトの編集</h2>
+<p><img src="https://i.gyazo.com/32d46aef7ba06288e2f159ab3d0c1255.png" alt="image"></p>
+<p> NewHomes を選択した状態で Configure をクリックして編集画面に移動します。</p>
+<p><img src="https://i.gyazo.com/632e07c75b8bab1eec3f15f30dbfd08b.png" alt="image"></p>
+<p>Layout の Type を Grid に変更します。</p>
+<p><img src="https://i.gyazo.com/69d9b46363014759bbad64cd9e624a38.png" alt="image"></p>
+<p>上下左右の余白を示す、こちらのエリアで各設定を 10 px にします。（これは上部の余白を設定する例です）</p>
+<p><img src="https://i.gyazo.com/eddb1b4d7bcafc6df7c2c2ce8b8cdfed.png" alt="image"></p>
+<p>上下左右ともに 10 px に設定した状態です。</p>
+<h3 id="レイアウトが崩れたら再度作り直します"><a name="レイアウトが崩れたら再度作り直します" class="plugin-anchor" href="#レイアウトが崩れたら再度作り直します"><i class="fa fa-link" aria-hidden="true"></i></a>レイアウトが崩れたら再度作り直します</h3>
+<p><img src="https://i.gyazo.com/919851d96cbc98b32aa9c3ff455782c9.png" alt="image"></p>
+<p>レイアウトの編集中にレイアウトが崩れてしまったら再度作り直しましょう。</p>
+<p><img src="https://i.gyazo.com/5fa73e555c180ea686921372bd76b91d.png" alt="image"></p>
+<p>UI Library をクリックして編集画面から戻ります。</p>
+<p><img src="https://i.gyazo.com/0b5af0806dbee49fffef5ab15d8d71ed.png" alt="image"></p>
+<p> NewHomes を選択した状態で Delete ボタンをクリックします。</p>
+<p>削除できたら「コンポーネントをデータに応じて並べる NewHomes コレクションを作成する」から再開します。</p>
+<h2 id="コンポーネントコードの取得"><a name="コンポーネントコードの取得" class="plugin-anchor" href="#コンポーネントコードの取得"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントコードの取得</h2>
+<p><img src="https://i.gyazo.com/1cb9f35fc517e26ddc4156bc59f728b3.png" alt="image"></p>
+<p>Get component code ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png" alt="image"></p>
+<p>NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコードをコピーします。</p>
 
                                 
                                 </section>
@@ -423,10 +490,14 @@
 
             
                 
-                <a href="06-figma-setup.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Figma の準備">
+                <a href="06-figma-setup.html" class="navigation navigation-prev " aria-label="Previous page: Figma の準備">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="08-react-setup-and-deploy.html" class="navigation navigation-next " aria-label="Next page: React の準備と Amplify デプロイ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -435,7 +506,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.9","depth":1,"previous":{"title":"Figma の準備","level":"1.8","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"07-figma-amplify-studio-setting.md","mtime":"2022-08-14T12:21:07.868Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-14T21:46:14.441Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.9","depth":1,"next":{"title":"React の準備と Amplify デプロイ","level":"1.10","depth":1,"path":"08-react-setup-and-deploy.md","ref":"08-react-setup-and-deploy.md","articles":[]},"previous":{"title":"Figma の準備","level":"1.8","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"07-figma-amplify-studio-setting.md","mtime":"2022-08-21T13:13:35.353Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-21T13:31:16.547Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

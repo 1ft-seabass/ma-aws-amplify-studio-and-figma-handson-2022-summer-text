@@ -210,4 +210,56 @@ image を選択した状態で Set prop をクリックします。
 
 右上にある Create collection をクリックします。
 
+![image](https://i.gyazo.com/3521db5e1942e247390930a55345a6f0.png)
+
+コレクションの名前を NewHomes にして、Create ボタンをクリックします。
+
+![image](https://i.gyazo.com/00b638c562267e89134e2ca26ca739f5.png)
+
+あたらしく NewHomes が作成されて先ほど Content で設定したデータがプレビューとして反映されています。
+
+## コレクションのレイアウトの編集
+
+![image](https://i.gyazo.com/32d46aef7ba06288e2f159ab3d0c1255.png)
+
+ NewHomes を選択した状態で Configure をクリックして編集画面に移動します。
+
+![image](https://i.gyazo.com/632e07c75b8bab1eec3f15f30dbfd08b.png)
+
+Layout の Type を Grid に変更します。
+
+![image](https://i.gyazo.com/69d9b46363014759bbad64cd9e624a38.png)
+
+上下左右の余白を示す、こちらのエリアで各設定を 10 px にします。（これは上部の余白を設定する例です）
+
+![image](https://i.gyazo.com/eddb1b4d7bcafc6df7c2c2ce8b8cdfed.png)
+
+上下左右ともに 10 px に設定した状態です。
+
+### レイアウトが崩れたら再度作り直します
+
+![image](https://i.gyazo.com/919851d96cbc98b32aa9c3ff455782c9.png)
+
+レイアウトの編集中にレイアウトが崩れてしまったら再度作り直しましょう。
+
+![image](https://i.gyazo.com/5fa73e555c180ea686921372bd76b91d.png)
+
+UI Library をクリックして編集画面から戻ります。
+
+![image](https://i.gyazo.com/0b5af0806dbee49fffef5ab15d8d71ed.png)
+
+ NewHomes を選択した状態で Delete ボタンをクリックします。
+
+削除できたら「コンポーネントをデータに応じて並べる NewHomes コレクションを作成する」から再開します。
+
+## コンポーネントコードの取得
+
+![image](https://i.gyazo.com/1cb9f35fc517e26ddc4156bc59f728b3.png)
+
+Get component code ボタンをクリックします。
+
+![image](https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png)
+
+NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコードをコピーします。
+
 

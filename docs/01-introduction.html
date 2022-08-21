@@ -217,6 +217,45 @@
             
         </li>
     
+        <li class="chapter " data-level="1.10" data-path="08-react-setup-and-deploy.html">
+            
+                <a href="08-react-setup-and-deploy.html">
+            
+                    
+                    React の準備と Amplify デプロイ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09-react-extend-code.html">
+            
+                <a href="09-react-extend-code.html">
+            
+                    
+                    React のコードによる拡張
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10-environment-delete.html">
+            
+                <a href="10-environment-delete.html">
+            
+                    
+                    環境の削除
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -263,6 +302,14 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="はじめに"><a name="はじめに" class="plugin-anchor" href="#はじめに"><i class="fa fa-link" aria-hidden="true"></i></a>はじめに</h1>
+<p>このハンズオン資料は以下の記事を元に Cloud9 をエディタとして使って Amplify Studio と Figma のアプリ作成を行うものです。</p>
+<p><img src="https://i.gyazo.com/31e637ad95d0cdc10b1f4918bcc9211f.jpg" alt="image"></p>
+<p><a href="https://aws.amazon.com/jp/blogs/news/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming/" target="_blank">AWS Amplify Studio – 最小限のプログラミングでFigmaからフルスタックのReactアプリを実現 | Amazon Web Services ブログ</a></p>
+<h2 id="そのほか参考資料"><a name="そのほか参考資料" class="plugin-anchor" href="#そのほか参考資料"><i class="fa fa-link" aria-hidden="true"></i></a>そのほか参考資料</h2>
+<p><a href="https://zenn.dev/shigeru_oda/books/521fa5a5a9c558c6275d/viewer/introduction" target="_blank">はじめに｜AWS Amplify Studio + Figmaハンズオン</a></p>
+<p>また、同じ技術構成でハンズオンを行うこちらの資料も、いろいろと参考にさせております。</p>
+<p>流れは参考にしつつ、2022/3 のものなので最新の画面のキャプチャ更新であったり、操作面で変わった部分や分かりにくい部分をより細かく書いています。</p>
+<p>それでははじめていきましょう！</p>
 
                                 
                                 </section>
@@ -306,7 +353,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"はじめに","level":"1.3","depth":1,"next":{"title":"Cloud9 の準備","level":"1.4","depth":1,"path":"02-cloud9-create.md","ref":"02-cloud9-create.md","articles":[]},"previous":{"title":"事前準備","level":"1.2","depth":1,"path":"00-preparation.md","ref":"00-preparation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"01-introduction.md","mtime":"2022-08-08T00:50:16.242Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-14T21:46:14.441Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"はじめに","level":"1.3","depth":1,"next":{"title":"Cloud9 の準備","level":"1.4","depth":1,"path":"02-cloud9-create.md","ref":"02-cloud9-create.md","articles":[]},"previous":{"title":"事前準備","level":"1.2","depth":1,"path":"00-preparation.md","ref":"00-preparation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"01-introduction.md","mtime":"2022-08-19T01:19:03.857Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-21T13:31:16.547Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

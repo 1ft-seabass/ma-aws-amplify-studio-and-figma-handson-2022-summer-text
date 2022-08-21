@@ -9,3 +9,6 @@
 - [Amplify Studio の設定](05-amplify-studio-setting.md)
 - [Figma の準備](06-figma-setup.md)
 - [Amplify Studio の設定](07-figma-amplify-studio-setting.md)
+- [React の準備と Amplify デプロイ](08-react-setup-and-deploy.md)
+- [React のコードによる拡張](09-react-extend-code.md)
+- [環境の削除](10-environment-delete.md)
