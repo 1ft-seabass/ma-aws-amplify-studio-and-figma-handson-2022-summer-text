@@ -1,13 +1,14 @@
 # Cloud9 の準備
 
-## 参考資料
+## 自分の名前を半角英数字で決めておきます
 
-Cloud9の準備・作成｜AWS Amplify Studio + Figmaハンズオン
-https://zenn.dev/shigeru_oda/books/521fa5a5a9c558c6275d/viewer/setup-cloud9
+このあと、つどつど自分の環境を分かりやすく作成します。
 
-こちらの記事を参考に Cloud9 を構築します。
+自分の名前を使うので半角英数字で決めておきます。
 
-## まず検索してアクセス
+たとえば Tanaka Seigo の場合は tanaka-seigo です。
+
+## まず検索して Cloud9 にアクセス
 
 ![image](https://i.gyazo.com/6a4fb8f45fb61ce60777fc019660b3d9.png)
 
@@ -40,7 +41,8 @@ Name Environment ページに移動します。
 以下のように設定を行います。
 
 - Name
-    - 任意
+    - amplify-cloud9-<自分の名前>
+    - 例 : amplify-cloud9-tanaka-seigo
 - Description
     - 任意
 

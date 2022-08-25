@@ -2,11 +2,6 @@
 
 Amplify Studio の準備をすすめます。
 
-## 参考資料
-
-Amplify Studioの準備・作成｜AWS Amplify Studio + Figmaハンズオン
-https://zenn.dev/shigeru_oda/books/521fa5a5a9c558c6275d/viewer/setup-studio
-
 ## AWS コンソールでリージョンは東京（ap-northeast-1）にします
 
 ![image](https://i.gyazo.com/8cd57a12e35ea6eacafa2a283efee9b2.png)
