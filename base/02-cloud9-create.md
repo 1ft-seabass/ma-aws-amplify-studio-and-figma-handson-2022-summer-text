@@ -36,13 +36,13 @@ Create environment ボタンをクリックします。
 
 Name Environment ページに移動します。
 
-![image](https://i.gyazo.com/6b9f048a58ab5739ad4b7f9ff30f2162.png)
+![image](https://i.gyazo.com/61723e5948c73d333fb5fe95eaff3308.png)
 
 以下のように設定を行います。
 
 - Name
-    - amplify-cloud9-<自分の名前>
-    - 例 : amplify-cloud9-tanaka-seigo
+    - aws-amplify-figma-handson-<自分の名前>-20220825
+    - 例 : aws-amplify-figma-handson-tanaka-seigo-20220825
 - Description
     - 任意
 
@@ -159,7 +159,7 @@ aws-cloud9-... の項目のチェックボックスをクリックして選択�
 
 ![image](https://i.gyazo.com/5116004779446699ce62bd73c7106f7c.png)
 
-30 に変更して、変更ボタンをクリックします。
+30 に変更して、変更ボタンをクリックします。（コツとしては 10 のときに 1 を選択して 3 と打ち込んで 30 とするのがおすすめです。）
 
 ![image](https://i.gyazo.com/8f9800f5d733c071ce10220a3ca07c24.png)
 
@@ -171,13 +171,17 @@ aws-cloud9-... の項目のチェックボックスをクリックして選択�
 
 右のメニューからインスタンスをクリックして、インスタンスに戻ります。
 
+![image](https://i.gyazo.com/49cdedfaf49c4845fe1e0e0fa36d35fb.png)
+
+今回のインスタンスがステータスチェックが緑で完了していることを確認しておきましょう。
+
 ![image](https://i.gyazo.com/c7dea9c1da90f855dcc00ae0c493c1ba.png)
 
 今回 Cloud9 で使っている EC2 Instance を選択します。
 
 ![image](https://i.gyazo.com/31c5ef58255f30b668cd54f9a29029ab.png)
 
-選択した状態で、インスタンスを再起動ボタンをクリックします。
+選択した上で、インスタンスの状態からインスタンスを再起動ボタンをクリックします。
 
 ![image](https://i.gyazo.com/621c0b4cc573998b62313c13ba38c021.png)
 
@@ -191,7 +195,7 @@ aws-cloud9-... の項目のチェックボックスをクリックして選択�
 
 ![image](https://i.gyazo.com/213625075fe0271c4b17236760cdd0e7.png)
 
-今回使う Cloud9 に戻ります。作成後、ずっと表示している方は、一度ブラウザを再読み込みしましょう。
+今回使う Cloud9 に戻ります。再起動されたので、一度ブラウザを再読み込みしましょう。
 
 ## ターミナルで容量確認
 

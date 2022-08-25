@@ -165,9 +165,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="03-amplify-basic-create.ms">
+        <li class="chapter " data-level="1.6" data-path="03-amplify-basic-create.html">
             
-                <span>
+                <a href="03-amplify-basic-create.html">
             
                     
                     Amplifyのベース作成
@@ -333,12 +333,12 @@
 <h2 id="name-environment"><a name="name-environment" class="plugin-anchor" href="#name-environment"><i class="fa fa-link" aria-hidden="true"></i></a>Name Environment</h2>
 <p><img src="https://i.gyazo.com/df747eb83d5f97b691f0bafb8969a2e5.png" alt="image"></p>
 <p>Name Environment ページに移動します。</p>
-<p><img src="https://i.gyazo.com/6b9f048a58ab5739ad4b7f9ff30f2162.png" alt="image"></p>
+<p><img src="https://i.gyazo.com/61723e5948c73d333fb5fe95eaff3308.png" alt="image"></p>
 <p>以下のように設定を行います。</p>
 <ul>
 <li>Name<ul>
-<li>amplify-cloud9-&lt;自分の名前&gt;</li>
-<li>例 : amplify-cloud9-tanaka-seigo</li>
+<li>aws-amplify-figma-handson-&lt;自分の名前&gt;-20220825</li>
+<li>例 : aws-amplify-figma-handson-tanaka-seigo-20220825</li>
 </ul>
 </li>
 <li>Description<ul>
@@ -413,23 +413,25 @@
 <p><img src="https://i.gyazo.com/f276af7bc972bf9dd85ac98e2618a598.png" alt="image"></p>
 <p>ボリュームの詳細ページが表示されます。もともとのサイズが 10 GiB になっていることを確認します。</p>
 <p><img src="https://i.gyazo.com/5116004779446699ce62bd73c7106f7c.png" alt="image"></p>
-<p>30 に変更して、変更ボタンをクリックします。</p>
+<p>30 に変更して、変更ボタンをクリックします。（コツとしては 10 のときに 1 を選択して 3 と打ち込んで 30 とするのがおすすめです。）</p>
 <p><img src="https://i.gyazo.com/8f9800f5d733c071ce10220a3ca07c24.png" alt="image"></p>
 <p>アラートが出ますが、ここは変更するので、変更ボタンをクリックします。</p>
 <h2 id="インスタンスの再起動"><a name="インスタンスの再起動" class="plugin-anchor" href="#インスタンスの再起動"><i class="fa fa-link" aria-hidden="true"></i></a>インスタンスの再起動</h2>
 <p><img src="https://i.gyazo.com/dd7f801b2c5b85ebbfefe82bb0652472.png" alt="image"></p>
 <p>右のメニューからインスタンスをクリックして、インスタンスに戻ります。</p>
+<p><img src="https://i.gyazo.com/49cdedfaf49c4845fe1e0e0fa36d35fb.png" alt="image"></p>
+<p>今回のインスタンスがステータスチェックが緑で完了していることを確認しておきましょう。</p>
 <p><img src="https://i.gyazo.com/c7dea9c1da90f855dcc00ae0c493c1ba.png" alt="image"></p>
 <p>今回 Cloud9 で使っている EC2 Instance を選択します。</p>
 <p><img src="https://i.gyazo.com/31c5ef58255f30b668cd54f9a29029ab.png" alt="image"></p>
-<p>選択した状態で、インスタンスを再起動ボタンをクリックします。</p>
+<p>選択した上で、インスタンスの状態からインスタンスを再起動ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/621c0b4cc573998b62313c13ba38c021.png" alt="image"></p>
 <p>確認画面が出るので、今回 Cloud9 で使っている EC2 Instance かどうかを確認して再起動ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/3353dbd03466c6d17c441fca69395f2e.png" alt="image"></p>
 <p>正常に再起動しましたとメッセージが出て、再起動できたことを確認します。</p>
 <h2 id="cloud9-に戻ります"><a name="cloud9-に戻ります" class="plugin-anchor" href="#cloud9-に戻ります"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 に戻ります</h2>
 <p><img src="https://i.gyazo.com/213625075fe0271c4b17236760cdd0e7.png" alt="image"></p>
-<p>今回使う Cloud9 に戻ります。作成後、ずっと表示している方は、一度ブラウザを再読み込みしましょう。</p>
+<p>今回使う Cloud9 に戻ります。再起動されたので、一度ブラウザを再読み込みしましょう。</p>
 <h2 id="ターミナルで容量確認"><a name="ターミナルで容量確認" class="plugin-anchor" href="#ターミナルで容量確認"><i class="fa fa-link" aria-hidden="true"></i></a>ターミナルで容量確認</h2>
 <p><img src="https://i.gyazo.com/34300908f77498404d5b7ca75ab35f0c.png" alt="image"></p>
 <p>下部のターミナルでコマンドを入力します。</p>
@@ -500,7 +502,7 @@ tmpfs           806M     0  806M   0% /run/user/1000
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cloud9 の準備","level":"1.4","depth":1,"next":{"title":"Amplify の初期設定","level":"1.5","depth":1,"path":"03-amplify-account-create.md","ref":"03-amplify-account-create.md","articles":[]},"previous":{"title":"はじめに","level":"1.3","depth":1,"path":"01-introduction.md","ref":"01-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"02-cloud9-create.md","mtime":"2022-08-25T12:49:31.758Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T12:53:54.546Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cloud9 の準備","level":"1.4","depth":1,"next":{"title":"Amplify の初期設定","level":"1.5","depth":1,"path":"03-amplify-account-create.md","ref":"03-amplify-account-create.md","articles":[]},"previous":{"title":"はじめに","level":"1.3","depth":1,"path":"01-introduction.md","ref":"01-introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"02-cloud9-create.md","mtime":"2022-08-25T13:08:11.753Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T13:26:52.869Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

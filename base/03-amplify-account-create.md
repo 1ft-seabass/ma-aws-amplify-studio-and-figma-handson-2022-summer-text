@@ -1,16 +1,22 @@
 # Amplify の初期設定
 
+![image](https://i.gyazo.com/7b978d74330a39631e1cc9431fe62f49.png)
+
 Cloud9 のターミナルで作業を進めます。
 
-Amplify CLI をインストールします。
-
 ## Amplify CLI インストール
+
+Amplify CLI をインストールします。
 
 ```
 npm install -g @aws-amplify/cli
 ```
 
-こちらのコマンドを実行して、インストールを待ちます。
+こちらのコマンドをコピーアンドペーストで入力して実行して、インストールを待ちます。
+
+![image](https://i.gyazo.com/550100bc65037a688ac59f4e08752241.png)
+
+コピーアンドペースト時にブラウザのアドレスバーでクリップボードの許可がでてくるので許可します。これをすれば今後はペーストできます。
 
 ## Amplify 初期設定をはじめる
 
@@ -42,7 +48,7 @@ Press Enter to continue
 
 Amplify のための新しい IAM ユーザーの名前を決めます。
 
-これは最初に提案される ランダムの名前（amplify-＜ランダム文字列＞）をそのままで OK です。
+これは最初に提案される ランダムの名前（amplify-<ランダム文字列>）をそのままで OK です。
 
 Enter キーを押します。
 
@@ -61,6 +67,16 @@ Open をクリックします。
 ![image](https://i.gyazo.com/d2be0dfa08d7f81bcab3de08eb31e3af.png)
 
 ブラウザ上の AWS コンソールの IAM に移動します。さきほど決めたIAM ユーザーの名前が設定されています。
+
+### 名前の変更
+
+![image](https://i.gyazo.com/615c197bf30df131bf748096f7521d22.png)
+
+このようにランダムの名前（amplify-<ランダム文字列>）になっているので、
+
+![image](https://i.gyazo.com/2566f6bf6135d893f23cc03341aa1260.png)
+
+amplify とランダム文字列の間に Cloud9 と同様に自分の名前を加えてハイフンでつなぎます。
 
 ## AWS コンソール
 
@@ -121,6 +137,12 @@ Cloud9 のターミナルに戻り、先ほどの Amplify CLI の設定途中に
 ![image](https://i.gyazo.com/5f266f1e0eb94cfa90ab87b43c2d89cc.png)
 
 Amplify のための新しい IAM ユーザーのアクセスキーを聞かれるので、メモしたものを入力します。コピーアンドペーストできます。
+
+まず、アクセスキーをコピーします。
+
+![image](https://i.gyazo.com/39bac5ee793c19d9e3a1b23bc2dd4b78.png)
+
+ターミナルで右クリックで Paste を選びましょう。
 
 ![image](https://i.gyazo.com/64a046c31ef147a2bab0c683f7ec0afa.png)
 
