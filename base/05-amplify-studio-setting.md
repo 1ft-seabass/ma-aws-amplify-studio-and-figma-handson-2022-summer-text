@@ -76,14 +76,37 @@ Get a copy ボタンをクリックします。
 
 ただし、英語です。
 
-## トラブルシューティング : Checking for running deployments のまま進まない
+## トラブルシューティング : Checking for running deployments のまま進まない 対応1
 
 ![image](https://i.gyazo.com/a2c7d615056e9b31377f155acc311d4d.png)
 
-Data のときに Checking for running deployments の場合は待ちます。それでも進まない場合は、環境を作り直します。
+Data のときに Checking for running deployments の場合は待ちます。
+
+- /amplify-homes-handson-sample-202208/amplify/backend/api/amplifyhomes/schema.graphql ファイルを開きます
+- 1行だけ改行を増やして保存して amplify push します
+- ? Do you want to update code for your updated GraphQL API
+  - Yes
+- ? Do you want to generate GraphQL statements (queries, mutations and subscription) based on your schema types?
+This will overwrite your current graphql queries, mutations and subscriptions
+  - Yes
+- Deploy が終わったらもう一度 Amplify Studio を見に行く
+- Data で Deploy 出来るはずです
+
+## トラブルシューティング : Checking for running deployments のまま進まない 対応2
+
+それでも進まない場合は、環境を作り直しますが、解決する確証がなく、あまりおすすめしないので、対応1で解消されることを祈っております。
 
 - Cloud9 にもどります。
 - amplify-homes-handson-sample-202208 フォルダに移動します
 - amplify delete コマンドで今回の環境削除します
 - ファイルツリーから amplify-homes-handson-sample-202208 フォルダを削除します
 - 再度 Amplify ベースから作り直します。
+
+参考
+
+- Amplify studio data save and deploy is loading for ever · Issue #440 · aws-amplify/amplify-adminui
+  - https://github.com/aws-amplify/amplify-adminui/issues/440
+- UI - parse error blocks functions · Issue #431 · aws-amplify/amplify-adminui
+  - https://github.com/aws-amplify/amplify-adminui/issues/431
+
+

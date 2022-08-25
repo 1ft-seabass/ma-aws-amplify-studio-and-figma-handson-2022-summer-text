@@ -74,6 +74,8 @@ amplify/.config/project-config.json をダブルクリックしてエディタ�
 
 projectName の amplifyhomes に自分の名前の略称を加えて保存します。
 
+## ここでコマンドの中断 Ctrl + C も伝えられたら伝える
+
 ### 設定開始
 
 ```
