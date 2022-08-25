@@ -2,7 +2,11 @@
 
 Amplify Studio の設定を進めます。
 
-## 別ページで Figma にログインしておきます
+## 別のタブで Figma にログインしておきます
+
+![image](https://i.gyazo.com/a7824e2fcbc836a4f8cbd510e6d8bb92.png)
+
+ブラウザで別のタブを開きます。
 
 ![image](https://i.gyazo.com/7f6371ba74ad93065884809a2477873f.png)
 
@@ -12,9 +16,11 @@ Amplify Studio の設定を進めます。
 
 ## Data の設定
 
+ブラウザで Amplify Studio のタブに戻ります。
+
 ![image](https://i.gyazo.com/56050a7f1df77b4d152a692210bd6c9c.png)
 
-左のメニューから Data をクリックします。
+左のメニューから Data をクリックします。たまに Loading のままになる場合があるので、そのときはリロードします。
 
 ![image](https://i.gyazo.com/27987a8032239562df3e2f31280016d3.png)
 
@@ -60,12 +66,24 @@ Get a copy ボタンをクリックします。
 
 しばらくボタンがローディングでくるくる回って、このように Figma で AWS Amplify UI Kit が読み込まれたプロジェクトが表示されます。
 
-## 余談 : 
+## 余談
 
 ![image](https://i.gyazo.com/28019e3e8be858cee99a708f5b1eb985.png)
 
-右上の三角ボタンをクリックするとプレゼンてーしょっぽく再生されて、部品の作り方が表示される仕掛けです。
+右上の三角ボタンをクリックするとプレゼンテーションぽく再生されて、部品の作り方が表示される仕掛けです。
 
 ![image](https://i.gyazo.com/c78fcc631102717ad4b9e642b4217b46.png)
 
 ただし、英語です。
+
+## トラブルシューティング : Checking for running deployments のまま進まない
+
+![image](https://i.gyazo.com/a2c7d615056e9b31377f155acc311d4d.png)
+
+Data のときに Checking for running deployments の場合は待ちます。それでも進まない場合は、環境を作り直します。
+
+- Cloud9 にもどります。
+- amplify-homes-handson-sample-202208 フォルダに移動します
+- amplify delete コマンドで今回の環境削除します
+- ファイルツリーから amplify-homes-handson-sample-202208 フォルダを削除します
+- 再度 Amplify ベースから作り直します。

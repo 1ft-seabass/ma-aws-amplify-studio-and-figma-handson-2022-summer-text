@@ -2,6 +2,12 @@
 
 Amplify Studio の準備をすすめます。
 
+## AWS コンソールを開きます
+
+![image](https://i.gyazo.com/7134c13a498f34ea4a2e264965e7c2b7.png)
+
+Cloud9 から Go To Dashboard をクリックして AWS コンソールを開きます。
+
 ## AWS コンソールでリージョンは東京（ap-northeast-1）にします
 
 ![image](https://i.gyazo.com/8cd57a12e35ea6eacafa2a283efee9b2.png)
@@ -23,6 +29,12 @@ AWS Amplify の一覧ページへ移動します。
 ![image](https://i.gyazo.com/895f542c07ca36bba8f8bb8490390f00.png)
 
 一覧から amplifyhomes を選択します。
+
+## 自分の環境を探します
+
+![image](https://i.gyazo.com/4553d355fd1b0aad8095d74bbac42343.png)
+
+自分の名前の環境名を探します。
 
 ## Amplify Studio のセットアップ
 

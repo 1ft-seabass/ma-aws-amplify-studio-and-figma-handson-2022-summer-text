@@ -335,18 +335,28 @@ Resolving deltas: 100% (11/11), done.
 <h2 id="npm-インストール"><a name="npm-インストール" class="plugin-anchor" href="#npm-インストール"><i class="fa fa-link" aria-hidden="true"></i></a>npm インストール</h2>
 <pre><code>npm i
 </code></pre><p>このコマンドを実行します。現在の環境のモジュール一式をインストールします。</p>
+<p>これを忘れると、あとで amplify publish あたりで <code>/tmp/build-0d70d1c9.sh: line 1: react-scripts: command not found</code> エラーが出るので、忘れないようにしましょう。</p>
 <h2 id="amplify-環境の初期設定"><a name="amplify-環境の初期設定" class="plugin-anchor" href="#amplify-環境の初期設定"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify 環境の初期設定</h2>
 <h3 id="まず自分の環境の名前を決めます"><a name="まず自分の環境の名前を決めます" class="plugin-anchor" href="#まず自分の環境の名前を決めます"><i class="fa fa-link" aria-hidden="true"></i></a>まず自分の環境の名前を決めます</h3>
 <p>このあと、みなさん、それぞれの環境で Amplify を作成します。</p>
 <p>自分の環境の名前を決めておきましょう。</p>
-<p>まず、自分の名前の略称を半角英数字で決めます。私の場合は tseigo としました。</p>
+<p>Cloud9 の時より短い自分の名前の略称を2～10文字の半角英数字で決めます。</p>
+<p>私の場合は tseigo としました。</p>
 <p>このあとこれを自分の環境の名前として使っていきましょう。</p>
+<h3 id="環境名変更"><a name="環境名変更" class="plugin-anchor" href="#環境名変更"><i class="fa fa-link" aria-hidden="true"></i></a>環境名変更</h3>
+<p><img src="https://i.gyazo.com/8e4d5fee7d9f901d5a14588a6ef386ec.png" alt="image"></p>
+<p>ファイルツリーで Show Hidden Files をオンにします。</p>
+<p><img src="https://i.gyazo.com/b10c07b15df75708ab94b121e4d3c360.png" alt="image"></p>
+<p>amplify/.config/project-config.json をダブルクリックしてエディタで開きます。</p>
+<p><img src="https://i.gyazo.com/d82342a7bdf62c1b3a05ba6b0ba92b76.png" alt="image"></p>
+<p>projectName の amplifyhomes に自分の名前の略称を加えて保存します。</p>
 <h3 id="設定開始"><a name="設定開始" class="plugin-anchor" href="#設定開始"><i class="fa fa-link" aria-hidden="true"></i></a>設定開始</h3>
 <pre><code>amplify init
 </code></pre><p>このコマンドを実行します。対話式でコマンドが進みます。</p>
 <h3 id="enter-a-name-for-the-environment-dev"><a name="enter-a-name-for-the-environment-dev" class="plugin-anchor" href="#enter-a-name-for-the-environment-dev"><i class="fa fa-link" aria-hidden="true"></i></a>Enter a name for the environment (dev)</h3>
 <p>環境の名前を入力してくださいと聞かれます。</p>
 <p>ここで、先ほど決めた自分の環境の名前を使っていきます。自分の環境の名前を入力して Enter キーを押します。</p>
+<p>↑ 重要</p>
 <h3 id="choose-your-default-editor-use-arrow-keys"><a name="choose-your-default-editor-use-arrow-keys" class="plugin-anchor" href="#choose-your-default-editor-use-arrow-keys"><i class="fa fa-link" aria-hidden="true"></i></a>? Choose your default editor: (Use arrow keys)</h3>
 <p>デフォルトのエディタを聞かれます。</p>
 <pre><code>? Choose your default editor: (Use arrow keys)
@@ -414,9 +424,11 @@ Command: amplify publish
 <p>このまま続けるか聞かれるので Y を入力して Enter キーを押します。</p>
 <h3 id="do-you-want-to-update-code-for-your-updated-graphql-api-yn"><a name="do-you-want-to-update-code-for-your-updated-graphql-api-yn" class="plugin-anchor" href="#do-you-want-to-update-code-for-your-updated-graphql-api-yn"><i class="fa fa-link" aria-hidden="true"></i></a>Do you want to update code for your updated GraphQL API (Y/n)</h3>
 <p>更新された GraphQL API のコードを更新するか聞かれるので、更新しないので N を入力して Enter キーを押します。</p>
+<p>No 重要です～。</p>
 <p><img src="https://i.gyazo.com/c93c7dfa6090bd3026543cf8245cfbe6.png" alt="image"></p>
-<p><code>[DEP0148] DeprecationWarning</code> がでますが、気にしないで大丈夫です。</p>
 <p>いろいろなものが設定・作成されるので待ちます。</p>
+<p><img src="https://i.gyazo.com/aefd11628f1d7a8ee992554183d903f5.png" alt="image"></p>
+<p><code>[DEP0148] DeprecationWarning</code> がでますが、気にしないで大丈夫です。待ちます。</p>
 <pre><code>✔ All resources are updated in the cloud
 
 GraphQL endpoint: https://***************.appsync-api.ap-northeast-1.amazonaws.com/graphql
@@ -457,7 +469,8 @@ sh: react-scripts: command not found
 Update this package.json to use a subpath pattern like &quot;./*&quot;.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 Creating an optimized production build...
-</code></pre>
+</code></pre><p>Amplifyのベース作成は完了です！</p>
+
                                 
                                 </section>
                             
@@ -500,7 +513,7 @@ Creating an optimized production build...
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Amplifyのベース作成","level":"1.6","depth":1,"next":{"title":"Amplify Studio の準備","level":"1.7","depth":1,"path":"04-amplify-studio-setup.md","ref":"04-amplify-studio-setup.md","articles":[]},"previous":{"title":"Amplify の初期設定","level":"1.5","depth":1,"path":"03-amplify-account-create.md","ref":"03-amplify-account-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"03-amplify-basic-create.md","mtime":"2022-08-25T13:26:48.931Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T13:26:52.869Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Amplifyのベース作成","level":"1.6","depth":1,"next":{"title":"Amplify Studio の準備","level":"1.7","depth":1,"path":"04-amplify-studio-setup.md","ref":"04-amplify-studio-setup.md","articles":[]},"previous":{"title":"Amplify の初期設定","level":"1.5","depth":1,"path":"03-amplify-account-create.md","ref":"03-amplify-account-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"03-amplify-basic-create.md","mtime":"2022-08-25T14:37:08.144Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T14:37:53.557Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

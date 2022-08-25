@@ -316,13 +316,16 @@
                                 
                                 <h1 id="amplify-studio-の設定"><a name="amplify-studio-の設定" class="plugin-anchor" href="#amplify-studio-の設定"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify Studio の設定</h1>
 <p>Amplify Studio の設定を進めます。</p>
-<h2 id="別ページで-figma-にログインしておきます"><a name="別ページで-figma-にログインしておきます" class="plugin-anchor" href="#別ページで-figma-にログインしておきます"><i class="fa fa-link" aria-hidden="true"></i></a>別ページで Figma にログインしておきます</h2>
+<h2 id="別のタブで-figma-にログインしておきます"><a name="別のタブで-figma-にログインしておきます" class="plugin-anchor" href="#別のタブで-figma-にログインしておきます"><i class="fa fa-link" aria-hidden="true"></i></a>別のタブで Figma にログインしておきます</h2>
+<p><img src="https://i.gyazo.com/a7824e2fcbc836a4f8cbd510e6d8bb92.png" alt="image"></p>
+<p>ブラウザで別のタブを開きます。</p>
 <p><img src="https://i.gyazo.com/7f6371ba74ad93065884809a2477873f.png" alt="image"></p>
 <p>右上の Login ボタンをクリックして、ログインします。</p>
 <p>（UI Kit のコピー時にログインすると、ダッシュボードにもどって分かりにくくなるので、先にログインしてます。）</p>
 <h2 id="data-の設定"><a name="data-の設定" class="plugin-anchor" href="#data-の設定"><i class="fa fa-link" aria-hidden="true"></i></a>Data の設定</h2>
+<p>ブラウザで Amplify Studio のタブに戻ります。</p>
 <p><img src="https://i.gyazo.com/56050a7f1df77b4d152a692210bd6c9c.png" alt="image"></p>
-<p>左のメニューから Data をクリックします。</p>
+<p>左のメニューから Data をクリックします。たまに Loading のままになる場合があるので、そのときはリロードします。</p>
 <p><img src="https://i.gyazo.com/27987a8032239562df3e2f31280016d3.png" alt="image"></p>
 <p>今回の仕組みでは、すでにデータができています。（Git リポジトリで事前に設定されています。）</p>
 <p>右上の Save and Deploy ボタンをクリックして設定を確定します。</p>
@@ -345,11 +348,21 @@
 <p>Get a copy ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/5747155663755067a29cb071063a66d9.png" alt="image"></p>
 <p>しばらくボタンがローディングでくるくる回って、このように Figma で AWS Amplify UI Kit が読み込まれたプロジェクトが表示されます。</p>
-<h2 id="余談-"><a name="余談-" class="plugin-anchor" href="#余談-"><i class="fa fa-link" aria-hidden="true"></i></a>余談 :</h2>
+<h2 id="余談"><a name="余談" class="plugin-anchor" href="#余談"><i class="fa fa-link" aria-hidden="true"></i></a>余談</h2>
 <p><img src="https://i.gyazo.com/28019e3e8be858cee99a708f5b1eb985.png" alt="image"></p>
-<p>右上の三角ボタンをクリックするとプレゼンてーしょっぽく再生されて、部品の作り方が表示される仕掛けです。</p>
+<p>右上の三角ボタンをクリックするとプレゼンテーションぽく再生されて、部品の作り方が表示される仕掛けです。</p>
 <p><img src="https://i.gyazo.com/c78fcc631102717ad4b9e642b4217b46.png" alt="image"></p>
 <p>ただし、英語です。</p>
+<h2 id="トラブルシューティング--checking-for-running-deployments-のまま進まない"><a name="トラブルシューティング--checking-for-running-deployments-のまま進まない" class="plugin-anchor" href="#トラブルシューティング--checking-for-running-deployments-のまま進まない"><i class="fa fa-link" aria-hidden="true"></i></a>トラブルシューティング : Checking for running deployments のまま進まない</h2>
+<p><img src="https://i.gyazo.com/a2c7d615056e9b31377f155acc311d4d.png" alt="image"></p>
+<p>Data のときに Checking for running deployments の場合は待ちます。それでも進まない場合は、環境を作り直します。</p>
+<ul>
+<li>Cloud9 にもどります。</li>
+<li>amplify-homes-handson-sample-202208 フォルダに移動します</li>
+<li>amplify delete コマンドで今回の環境削除します</li>
+<li>ファイルツリーから amplify-homes-handson-sample-202208 フォルダを削除します</li>
+<li>再度 Amplify ベースから作り直します。</li>
+</ul>
 
                                 
                                 </section>
@@ -393,7 +406,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.8","depth":1,"next":{"title":"Figma の準備","level":"1.9","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"previous":{"title":"Amplify Studio の準備","level":"1.7","depth":1,"path":"04-amplify-studio-setup.md","ref":"04-amplify-studio-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"05-amplify-studio-setting.md","mtime":"2022-08-14T12:21:21.760Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T13:26:52.869Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.8","depth":1,"next":{"title":"Figma の準備","level":"1.9","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"previous":{"title":"Amplify Studio の準備","level":"1.7","depth":1,"path":"04-amplify-studio-setup.md","ref":"04-amplify-studio-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"05-amplify-studio-setting.md","mtime":"2022-08-25T14:24:07.868Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T14:37:53.557Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

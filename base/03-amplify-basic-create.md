@@ -44,6 +44,8 @@ npm i
 
 このコマンドを実行します。現在の環境のモジュール一式をインストールします。
 
+これを忘れると、あとで amplify publish あたりで `/tmp/build-0d70d1c9.sh: line 1: react-scripts: command not found` エラーが出るので、忘れないようにしましょう。
+
 ## Amplify 環境の初期設定
 
 ### まず自分の環境の名前を決めます
@@ -52,9 +54,25 @@ npm i
 
 自分の環境の名前を決めておきましょう。
 
-まず、自分の名前の略称を半角英数字で決めます。私の場合は tseigo としました。
+Cloud9 の時より短い自分の名前の略称を2～10文字の半角英数字で決めます。
+
+私の場合は tseigo としました。
 
 このあとこれを自分の環境の名前として使っていきましょう。
+
+### 環境名変更
+
+![image](https://i.gyazo.com/8e4d5fee7d9f901d5a14588a6ef386ec.png)
+
+ファイルツリーで Show Hidden Files をオンにします。
+
+![image](https://i.gyazo.com/b10c07b15df75708ab94b121e4d3c360.png)
+
+amplify/.config/project-config.json をダブルクリックしてエディタで開きます。
+
+![image](https://i.gyazo.com/d82342a7bdf62c1b3a05ba6b0ba92b76.png)
+
+projectName の amplifyhomes に自分の名前の略称を加えて保存します。
 
 ### 設定開始
 
@@ -69,6 +87,8 @@ amplify init
 環境の名前を入力してくださいと聞かれます。
 
 ここで、先ほど決めた自分の環境の名前を使っていきます。自分の環境の名前を入力して Enter キーを押します。
+
+↑ 重要
 
 ### ? Choose your default editor: (Use arrow keys)
 
@@ -197,11 +217,15 @@ amplify publish
 
 更新された GraphQL API のコードを更新するか聞かれるので、更新しないので N を入力して Enter キーを押します。
 
+No 重要です～。
+
 ![image](https://i.gyazo.com/c93c7dfa6090bd3026543cf8245cfbe6.png)
 
-`[DEP0148] DeprecationWarning` がでますが、気にしないで大丈夫です。
-
 いろいろなものが設定・作成されるので待ちます。
+
+![image](https://i.gyazo.com/aefd11628f1d7a8ee992554183d903f5.png)
+
+`[DEP0148] DeprecationWarning` がでますが、気にしないで大丈夫です。待ちます。
 
 ```
 ✔ All resources are updated in the cloud
@@ -260,3 +284,5 @@ Update this package.json to use a subpath pattern like "./*".
 (Use `node --trace-deprecation ...` to show where the warning was created)
 Creating an optimized production build...
 ```
+
+Amplifyのベース作成は完了です！
