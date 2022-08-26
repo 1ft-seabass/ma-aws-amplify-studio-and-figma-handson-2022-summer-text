@@ -6,6 +6,13 @@
 
 [AWS Amplify Studio – 最小限のプログラミングでFigmaからフルスタックのReactアプリを実現 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming/)
 
+参考記事
+
+- 一般提供になりました
+  - [AWS Amplify Studio 一般提供開始のお知らせ | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/announcing-the-general-availability-of-aws-amplify-studio/)
+
+とはいえ、「最小限のプログラミングでFigmaからフルスタックのReactアプリを実現」のとおり、AWS と Figma と React という結構色々な複合技術を最小限のプログラミングですすめるものなので、なんでも簡単というよりは、構造を理解しながら作れるようにしていく感じです。頑張っていきましょう～。
+
 ## そのほか参考資料
 
 ![image](https://i.gyazo.com/2f462e4f728fc4796862e68c506c5db8.png)
@@ -15,7 +22,6 @@
 また、同じ技術構成でハンズオンを行うこちらの資料も、いろいろと参考にさせております。
 
 流れは参考にしつつ、2022/3 のものなので最新の画面のキャプチャ更新であったり、操作面で変わった部分や分かりにくい部分をより細かく書いています。
-
 
 ## おねがい
 
