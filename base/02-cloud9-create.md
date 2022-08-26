@@ -12,6 +12,12 @@ Amplify 環境を扱うために AWS 上でオンラインで動くエディタ 
 
 たとえば Tanaka Seigo の場合は tanaka-seigo です。
 
+## AWS にログインしましょう
+
+![image](https://i.gyazo.com/7ac8923b90fed81c1ce09700f6cfda41.png)
+
+レッツログイン！
+
 ## まず検索して Cloud9 にアクセス
 
 ![image](https://i.gyazo.com/6a4fb8f45fb61ce60777fc019660b3d9.png)
