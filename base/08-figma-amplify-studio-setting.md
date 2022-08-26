@@ -1,6 +1,10 @@
 # Figma と Amplify Studio の連携
 
+![image](https://i.gyazo.com/f1fad9a681cc76a46f9f5fca8dabaf0e.png)
+
 Figma と Amplify Studio の連携を進めます。
+
+Figma の中身と構造を Amplify にシェアした後に、データを Content に準備し、デザインへのデータの割り当て方も決めます。
 
 ## Figma から Amplify へ設定の Share
 

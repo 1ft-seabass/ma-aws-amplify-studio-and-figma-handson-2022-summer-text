@@ -1,5 +1,13 @@
 # Amplify の初期設定
 
+![image](https://i.gyazo.com/f621a122e26e1bf3d039c6f35e1e90a7.png)
+
+Cloud9 から Amplify を作れる AWS IAM ユーザーの作成をします。
+
+![image](https://i.gyazo.com/50d8c376fd44e35ab99e7178cd091b0d.png)
+
+そして、作ったユーザーを示すアクセスキー ID とシークレットアクセスキーで Amplify がつくれるようにターミナルに設定します。
+
 ![image](https://i.gyazo.com/7b978d74330a39631e1cc9431fe62f49.png)
 
 Cloud9 のターミナルで作業を進めます。
@@ -60,6 +68,12 @@ Enter キーを押します。
 
 緑色の URL の部分をクリックしましょう。
 
+新しくユーザーを作る場合は、以下「AWS コンソール（新しくユーザーを作る場合）」を進めます。
+
+すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある場合は「すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある（すでにユーザーがある場合）」に進みます。
+
+## AWS コンソール（新しくユーザーを作る場合）
+
 ![image](https://i.gyazo.com/e36550baf6f4974a36bdd60900e160e5.png)
 
 Open をクリックします。
@@ -78,7 +92,7 @@ Open をクリックします。
 
 amplify とランダム文字列の間に Cloud9 と同様に自分の名前を加えてハイフンでつなぎます。
 
-## AWS コンソール
+### 進める
 
 ![image](https://i.gyazo.com/af7680fbfa2d6a240e52b2bc617bae8c.png)
 
@@ -100,13 +114,13 @@ AdministratorAccess-Amplify がチェックされていることを確認して�
 
 作成成功画面に移動します。
 
-## アクセスキー ID をテキストエディタにメモ
+### アクセスキー ID をテキストエディタにメモ
 
 ![image](https://i.gyazo.com/09def33c31917a707f288040e0122ee8.png)
 
 アクセスキー ID をテキストエディタにメモします。しっかり全文字コピーアンドペーストしてメモできているかを確認しましょう。
 
-## シークレットアクセスキーをテキストエディタにメモ
+### シークレットアクセスキーをテキストエディタにメモ
 
 ![image](https://i.gyazo.com/3bbd2feb8eba42656da510cf9faaf68c.png)
 
@@ -126,13 +140,19 @@ AdministratorAccess-Amplify がチェックされていることを確認して�
 
 IAM の一覧画面に戻って、作成されたことを確認します。
 
+「Cloud9 に設定を反映」に進みます。
+
+## すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある（すでにユーザーがある場合）
+
+この後の「Cloud9 に設定を反映」に進んで、
+
 ## Cloud9 に設定を反映
 
 ![image](https://i.gyazo.com/c317a339450ce78517b22db098a771a8.png)
 
 Cloud9 のターミナルに戻り、先ほどの Amplify CLI の設定途中になっています。
 
-入力できたら Enter キーを押します。
+### アクセスキー ID をコピーアンドペーストして入力
 
 ![image](https://i.gyazo.com/5f266f1e0eb94cfa90ab87b43c2d89cc.png)
 
@@ -150,6 +170,8 @@ Amplify のための新しい IAM ユーザーのアクセスキーを聞かれ�
 
 Enter キーを押します。
 
+### シークレットアクセスキーをコピーアンドペーストして入力
+
 ![image](https://i.gyazo.com/636916da111dbba008e6606f0dfaca97.png)
 
 Amplify のための新しい IAM ユーザーのシークレットアクセスキーを聞かれるので、メモしたものを入力します。コピーアンドペーストできます。
@@ -158,7 +180,7 @@ Amplify のための新しい IAM ユーザーのシークレットアクセス�
 
 入力できたら Enter キーを押します。
 
-## プロファイル名の設定
+### プロファイル名の設定
 
 この Cloud9 のローカルのプロファイル名を指定が聞かれます。
 
@@ -168,7 +190,11 @@ Amplify のための新しい IAM ユーザーのシークレットアクセス�
 
 Successfully set up the new user. とでて、この Cloud9 での Amplify 初期設定は完了です！
 
-## どうなっているか
+## メモしたアクセスキー ID とシークレットアクセスキーは大切に保管しましょう
 
-- Cloud9
-- Amplify ユーザー
+![image](https://i.gyazo.com/02c15be7732c3be03f0258bb9a8341b2.png)
+
+今回、みなさんそれぞれで作ったアクセスキー ID とシークレットアクセスキーは、ハッカソン中も新しく Amplify 環境をつくるときに Amplify CLI に毎回登録して使えます。
+
+大切に保管しておきましょう。
+

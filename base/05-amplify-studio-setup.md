@@ -1,5 +1,11 @@
 # Amplify Studio の準備
 
+![image](https://i.gyazo.com/7d45b57a880b6e745408ebf237fdad0c.png)
+
+Amplify 環境が出来上がったので、Amplify 環境をより管理しやすくする Amplify Studio を今回の環境で準備します。
+
+こうすることで、Figma のデザインを受け入れたりデータの管理をまとめて行えるようになります。
+
 Amplify Studio の準備をすすめます。
 
 ## AWS コンソールを開きます

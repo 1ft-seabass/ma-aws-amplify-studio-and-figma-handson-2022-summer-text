@@ -1,5 +1,9 @@
 # Amplify Studio の設定
 
+![image](https://i.gyazo.com/6f3713ebb10fe3d725dc8a56398110ab.png)
+
+Amplify Studio 側から Figma で Amplify UI テンプレートを元に Figma ファイルを作成します。また、Amplify Studio 側で Figma のデザインにデータが入れられるように Data （データの入れ物）を作成します。
+
 Amplify Studio の設定を進めます。
 
 ## 別のタブで Figma にログイン

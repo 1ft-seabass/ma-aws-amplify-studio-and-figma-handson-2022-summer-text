@@ -1,8 +1,12 @@
 # React の準備と Amplify デプロイ
 
-さきほどの Figma のコンポーネントを React に準備して Amplify デプロイを行います。
+![image](https://i.gyazo.com/98bafd09e7d5dd4c12f8780d3bce7c24.png)
+
+データ連携するデザインパーツが Amplify Studio で出来上がったので Cloud9 の Amplify 環境に共有しつつ、それに合わせてソースコードを調整して、もろもろサイトの公開します。
 
 ![image](https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png)
+
+さきほどの Figma のコンポーネントを React に準備して Amplify デプロイを行います。
 
 こちらの手順を進めていきます。
 

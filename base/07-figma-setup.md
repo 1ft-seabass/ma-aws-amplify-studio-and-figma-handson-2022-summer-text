@@ -1,5 +1,7 @@
 # Figma の準備
 
+![image](https://i.gyazo.com/db593bac931bc98383087ad0f2f406bd.png)
+
 Figma で Amplify からデータを入れるひな形をつくります。
 
 ひきつづき、 Figma の作業です。

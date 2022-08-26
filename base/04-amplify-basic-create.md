@@ -1,6 +1,12 @@
-# Amplifyのベース作成
+# Amplify のベース作成
 
-Amplify のアカウントができたので、今回の Amplify のベース作成を作成します。
+Amplify のアカウントが Cloud9 で設定できたので、今回の Amplify のベースを作成します。
+
+![image](https://i.gyazo.com/ccf536646ecaa64009b2bac660928111.png)
+
+まず、GitHub から Amplify Studio + Figma が出来る、React 環境の初期設定と Amplify を扱うための GraphQL と API の設定が完了しているひな形を持ってきます。
+
+その後、みんな同名で Amplify 環境をつくることのないよう、環境名を設定調整して、そのひな形を元に Cloud9 から Amplify 環境を構築します。
 
 ## データを持ってくる　クローン
 

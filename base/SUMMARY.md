@@ -5,7 +5,7 @@
 - [はじめに](01-introduction.md)
 - [Cloud9 の準備](02-cloud9-create.md)
 - [Amplify の初期設定](03-amplify-account-create.md)
-- [Amplifyのベース作成](04-amplify-basic-create.md)
+- [Amplify のベース作成](04-amplify-basic-create.md)
 - [Amplify Studio の準備](05-amplify-studio-setup.md)
 - [Amplify Studio の設定](06-amplify-studio-setting.md)
 - [Figma の準備](07-figma-setup.md)

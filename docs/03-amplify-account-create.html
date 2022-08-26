@@ -170,7 +170,7 @@
                 <a href="04-amplify-basic-create.html">
             
                     
-                    Amplifyのベース作成
+                    Amplify のベース作成
             
                 </a>
             
@@ -328,6 +328,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="amplify-の初期設定"><a name="amplify-の初期設定" class="plugin-anchor" href="#amplify-の初期設定"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify の初期設定</h1>
+<p><img src="https://i.gyazo.com/f621a122e26e1bf3d039c6f35e1e90a7.png" alt="image"></p>
+<p>Cloud9 から Amplify を作れる AWS IAM ユーザーの作成をします。</p>
+<p><img src="https://i.gyazo.com/50d8c376fd44e35ab99e7178cd091b0d.png" alt="image"></p>
+<p>そして、作ったユーザーを示すアクセスキー ID とシークレットアクセスキーで Amplify がつくれるようにターミナルに設定します。</p>
 <p><img src="https://i.gyazo.com/7b978d74330a39631e1cc9431fe62f49.png" alt="image"></p>
 <p>Cloud9 のターミナルで作業を進めます。</p>
 <h2 id="amplify-cli-インストール"><a name="amplify-cli-インストール" class="plugin-anchor" href="#amplify-cli-インストール"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify CLI インストール</h2>
@@ -357,6 +361,9 @@ Press Enter to continue
 <p>リージョンと IAM ユーザの名前が決まったので、ブラウザ上の AWS コンソールで実際に作成する URL が案内されました。</p>
 <p><img src="https://i.gyazo.com/968760e7cc5cae519c53185d46435e41.png" alt="image"></p>
 <p>緑色の URL の部分をクリックしましょう。</p>
+<p>新しくユーザーを作る場合は、以下「AWS コンソール（新しくユーザーを作る場合）」を進めます。</p>
+<p>すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある場合は「すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある（すでにユーザーがある場合）」に進みます。</p>
+<h2 id="aws-コンソール（新しくユーザーを作る場合）"><a name="aws-コンソール（新しくユーザーを作る場合）" class="plugin-anchor" href="#aws-コンソール（新しくユーザーを作る場合）"><i class="fa fa-link" aria-hidden="true"></i></a>AWS コンソール（新しくユーザーを作る場合）</h2>
 <p><img src="https://i.gyazo.com/e36550baf6f4974a36bdd60900e160e5.png" alt="image"></p>
 <p>Open をクリックします。</p>
 <p><img src="https://i.gyazo.com/d2be0dfa08d7f81bcab3de08eb31e3af.png" alt="image"></p>
@@ -366,7 +373,7 @@ Press Enter to continue
 <p>このようにランダムの名前（amplify-&lt;ランダム文字列&gt;）になっているので、</p>
 <p><img src="https://i.gyazo.com/2566f6bf6135d893f23cc03341aa1260.png" alt="image"></p>
 <p>amplify とランダム文字列の間に Cloud9 と同様に自分の名前を加えてハイフンでつなぎます。</p>
-<h2 id="aws-コンソール"><a name="aws-コンソール" class="plugin-anchor" href="#aws-コンソール"><i class="fa fa-link" aria-hidden="true"></i></a>AWS コンソール</h2>
+<h3 id="進める"><a name="進める" class="plugin-anchor" href="#進める"><i class="fa fa-link" aria-hidden="true"></i></a>進める</h3>
 <p><img src="https://i.gyazo.com/af7680fbfa2d6a240e52b2bc617bae8c.png" alt="image"></p>
 <p>右下の 次のステップ : アクセス権限 ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/6e8b6dfc50b49e0c30e58b42f016ab95.png" alt="image"></p>
@@ -377,10 +384,10 @@ Press Enter to continue
 <p>確認画面で、ユーザー名やアクセス権限にAdministratorAccess-Amplifyがあることを確認して、ユーザの作成ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/6806637dcfdb3cb93267f36d5b4c9c8e.png" alt="image"></p>
 <p>作成成功画面に移動します。</p>
-<h2 id="アクセスキー-id-をテキストエディタにメモ"><a name="アクセスキー-id-をテキストエディタにメモ" class="plugin-anchor" href="#アクセスキー-id-をテキストエディタにメモ"><i class="fa fa-link" aria-hidden="true"></i></a>アクセスキー ID をテキストエディタにメモ</h2>
+<h3 id="アクセスキー-id-をテキストエディタにメモ"><a name="アクセスキー-id-をテキストエディタにメモ" class="plugin-anchor" href="#アクセスキー-id-をテキストエディタにメモ"><i class="fa fa-link" aria-hidden="true"></i></a>アクセスキー ID をテキストエディタにメモ</h3>
 <p><img src="https://i.gyazo.com/09def33c31917a707f288040e0122ee8.png" alt="image"></p>
 <p>アクセスキー ID をテキストエディタにメモします。しっかり全文字コピーアンドペーストしてメモできているかを確認しましょう。</p>
-<h2 id="シークレットアクセスキーをテキストエディタにメモ"><a name="シークレットアクセスキーをテキストエディタにメモ" class="plugin-anchor" href="#シークレットアクセスキーをテキストエディタにメモ"><i class="fa fa-link" aria-hidden="true"></i></a>シークレットアクセスキーをテキストエディタにメモ</h2>
+<h3 id="シークレットアクセスキーをテキストエディタにメモ"><a name="シークレットアクセスキーをテキストエディタにメモ" class="plugin-anchor" href="#シークレットアクセスキーをテキストエディタにメモ"><i class="fa fa-link" aria-hidden="true"></i></a>シークレットアクセスキーをテキストエディタにメモ</h3>
 <p><img src="https://i.gyazo.com/3bbd2feb8eba42656da510cf9faaf68c.png" alt="image"></p>
 <p>シークレットアクセスキーの表示をクリックします。</p>
 <p><img src="https://i.gyazo.com/97029c8ab8c0e4122786e3869f1c13f0.png" alt="image"></p>
@@ -390,10 +397,13 @@ Press Enter to continue
 <p>閉じるボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/0743f735f8a8799d09600a6ae50f2e32.png" alt="image"></p>
 <p>IAM の一覧画面に戻って、作成されたことを確認します。</p>
+<p>「Cloud9 に設定を反映」に進みます。</p>
+<h2 id="すでに自分の-amplify-ユーザーを作っていてアクセスキー-id-とシークレットアクセスキーがある（すでにユーザーがある場合）"><a name="すでに自分の-amplify-ユーザーを作っていてアクセスキー-id-とシークレットアクセスキーがある（すでにユーザーがある場合）" class="plugin-anchor" href="#すでに自分の-amplify-ユーザーを作っていてアクセスキー-id-とシークレットアクセスキーがある（すでにユーザーがある場合）"><i class="fa fa-link" aria-hidden="true"></i></a>すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある（すでにユーザーがある場合）</h2>
+<p>この後の「Cloud9 に設定を反映」に進んで、</p>
 <h2 id="cloud9-に設定を反映"><a name="cloud9-に設定を反映" class="plugin-anchor" href="#cloud9-に設定を反映"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 に設定を反映</h2>
 <p><img src="https://i.gyazo.com/c317a339450ce78517b22db098a771a8.png" alt="image"></p>
 <p>Cloud9 のターミナルに戻り、先ほどの Amplify CLI の設定途中になっています。</p>
-<p>入力できたら Enter キーを押します。</p>
+<h3 id="アクセスキー-id-をコピーアンドペーストして入力"><a name="アクセスキー-id-をコピーアンドペーストして入力" class="plugin-anchor" href="#アクセスキー-id-をコピーアンドペーストして入力"><i class="fa fa-link" aria-hidden="true"></i></a>アクセスキー ID をコピーアンドペーストして入力</h3>
 <p><img src="https://i.gyazo.com/5f266f1e0eb94cfa90ab87b43c2d89cc.png" alt="image"></p>
 <p>Amplify のための新しい IAM ユーザーのアクセスキーを聞かれるので、メモしたものを入力します。コピーアンドペーストできます。</p>
 <p>まず、アクセスキーをコピーします。</p>
@@ -402,20 +412,20 @@ Press Enter to continue
 <p><img src="https://i.gyazo.com/64a046c31ef147a2bab0c683f7ec0afa.png" alt="image"></p>
 <p>ペーストするとこのように＊＊＊＊＊となります。</p>
 <p>Enter キーを押します。</p>
+<h3 id="シークレットアクセスキーをコピーアンドペーストして入力"><a name="シークレットアクセスキーをコピーアンドペーストして入力" class="plugin-anchor" href="#シークレットアクセスキーをコピーアンドペーストして入力"><i class="fa fa-link" aria-hidden="true"></i></a>シークレットアクセスキーをコピーアンドペーストして入力</h3>
 <p><img src="https://i.gyazo.com/636916da111dbba008e6606f0dfaca97.png" alt="image"></p>
 <p>Amplify のための新しい IAM ユーザーのシークレットアクセスキーを聞かれるので、メモしたものを入力します。コピーアンドペーストできます。</p>
 <p><img src="https://i.gyazo.com/2b907045a97f075eb110962d4880edf0.png" alt="image"></p>
 <p>入力できたら Enter キーを押します。</p>
-<h2 id="プロファイル名の設定"><a name="プロファイル名の設定" class="plugin-anchor" href="#プロファイル名の設定"><i class="fa fa-link" aria-hidden="true"></i></a>プロファイル名の設定</h2>
+<h3 id="プロファイル名の設定"><a name="プロファイル名の設定" class="plugin-anchor" href="#プロファイル名の設定"><i class="fa fa-link" aria-hidden="true"></i></a>プロファイル名の設定</h3>
 <p>この Cloud9 のローカルのプロファイル名を指定が聞かれます。</p>
 <p>デフォルトのままで OK なので、 Enter キーを押します。</p>
 <p><img src="https://i.gyazo.com/731f1a2ec7aa061fc1a7b765703721ab.png" alt="image"></p>
 <p>Successfully set up the new user. とでて、この Cloud9 での Amplify 初期設定は完了です！</p>
-<h2 id="どうなっているか"><a name="どうなっているか" class="plugin-anchor" href="#どうなっているか"><i class="fa fa-link" aria-hidden="true"></i></a>どうなっているか</h2>
-<ul>
-<li>Cloud9</li>
-<li>Amplify ユーザー</li>
-</ul>
+<h2 id="メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう"><a name="メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう" class="plugin-anchor" href="#メモしたアクセスキー-id-とシークレットアクセスキーは大切に保管しましょう"><i class="fa fa-link" aria-hidden="true"></i></a>メモしたアクセスキー ID とシークレットアクセスキーは大切に保管しましょう</h2>
+<p><img src="https://i.gyazo.com/02c15be7732c3be03f0258bb9a8341b2.png" alt="image"></p>
+<p>今回、みなさんそれぞれで作ったアクセスキー ID とシークレットアクセスキーは、ハッカソン中も新しく Amplify 環境をつくるときに Amplify CLI に毎回登録して使えます。</p>
+<p>大切に保管しておきましょう。</p>
 
                                 
                                 </section>
@@ -448,7 +458,7 @@ Press Enter to continue
                 </a>
                 
                 
-                <a href="04-amplify-basic-create.html" class="navigation navigation-next " aria-label="Next page: Amplifyのベース作成">
+                <a href="04-amplify-basic-create.html" class="navigation navigation-next " aria-label="Next page: Amplify のベース作成">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -459,7 +469,7 @@ Press Enter to continue
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Amplify の初期設定","level":"1.5","depth":1,"next":{"title":"Amplifyのベース作成","level":"1.6","depth":1,"path":"04-amplify-basic-create.md","ref":"04-amplify-basic-create.md","articles":[]},"previous":{"title":"Cloud9 の準備","level":"1.4","depth":1,"path":"02-cloud9-create.md","ref":"02-cloud9-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"03-amplify-account-create.md","mtime":"2022-08-25T13:24:10.866Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T01:54:59.294Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Amplify の初期設定","level":"1.5","depth":1,"next":{"title":"Amplify のベース作成","level":"1.6","depth":1,"path":"04-amplify-basic-create.md","ref":"04-amplify-basic-create.md","articles":[]},"previous":{"title":"Cloud9 の準備","level":"1.4","depth":1,"path":"02-cloud9-create.md","ref":"02-cloud9-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"03-amplify-account-create.md","mtime":"2022-08-26T02:37:54.849Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T03:08:31.333Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
