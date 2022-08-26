@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>Amplify Studio の準備 · タイトル</title>
+        <title>環境の削除 · タイトル</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.4">
@@ -68,10 +68,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="05-amplify-studio-setting.html" />
+    <link rel="next" href="90-production-memo.html" />
     
     
-    <link rel="prev" href="03-amplify-basic-create.html" />
+    <link rel="prev" href="10-react-extend-code.html" />
     
 
     </head>
@@ -165,9 +165,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="03-amplify-basic-create.html">
+        <li class="chapter " data-level="1.6" data-path="04-amplify-basic-create.html">
             
-                <a href="03-amplify-basic-create.html">
+                <a href="04-amplify-basic-create.html">
             
                     
                     Amplifyのベース作成
@@ -178,9 +178,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="04-amplify-studio-setup.html">
+        <li class="chapter " data-level="1.7" data-path="05-amplify-studio-setup.html">
             
-                <a href="04-amplify-studio-setup.html">
+                <a href="05-amplify-studio-setup.html">
             
                     
                     Amplify Studio の準備
@@ -191,9 +191,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="05-amplify-studio-setting.html">
+        <li class="chapter " data-level="1.8" data-path="06-amplify-studio-setting.html">
             
-                <a href="05-amplify-studio-setting.html">
+                <a href="06-amplify-studio-setting.html">
             
                     
                     Amplify Studio の設定
@@ -204,9 +204,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="06-figma-setup.html">
+        <li class="chapter " data-level="1.9" data-path="07-figma-setup.html">
             
-                <a href="06-figma-setup.html">
+                <a href="07-figma-setup.html">
             
                     
                     Figma の準備
@@ -217,9 +217,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="07-figma-amplify-studio-setting.html">
+        <li class="chapter " data-level="1.10" data-path="08-figma-amplify-studio-setting.html">
             
-                <a href="07-figma-amplify-studio-setting.html">
+                <a href="08-figma-amplify-studio-setting.html">
             
                     
                     Amplify Studio の設定
@@ -230,9 +230,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="08-react-setup-and-deploy.html">
+        <li class="chapter " data-level="1.11" data-path="09-react-setup-and-deploy.html">
             
-                <a href="08-react-setup-and-deploy.html">
+                <a href="09-react-setup-and-deploy.html">
             
                     
                     React の準備と Amplify デプロイ
@@ -243,9 +243,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="09-react-extend-code.html">
+        <li class="chapter " data-level="1.12" data-path="10-react-extend-code.html">
             
-                <a href="09-react-extend-code.html">
+                <a href="10-react-extend-code.html">
             
                     
                     React のコードによる拡張
@@ -256,12 +256,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="10-environment-delete.html">
+        <li class="chapter active" data-level="1.13" data-path="11-environment-delete.html">
             
-                <a href="10-environment-delete.html">
+                <a href="11-environment-delete.html">
             
                     
                     環境の削除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="90-production-memo.html">
+            
+                <a href="90-production-memo.html">
+            
+                    
+                    制作メモ
             
                 </a>
             
@@ -299,7 +312,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Amplify Studio の準備</a>
+        <a href="." >環境の削除</a>
     </h1>
 </div>
 
@@ -314,45 +327,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="amplify-studio-の準備"><a name="amplify-studio-の準備" class="plugin-anchor" href="#amplify-studio-の準備"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify Studio の準備</h1>
-<p>Amplify Studio の準備をすすめます。</p>
-<h2 id="aws-コンソールを開きます"><a name="aws-コンソールを開きます" class="plugin-anchor" href="#aws-コンソールを開きます"><i class="fa fa-link" aria-hidden="true"></i></a>AWS コンソールを開きます</h2>
-<p><img src="https://i.gyazo.com/7134c13a498f34ea4a2e264965e7c2b7.png" alt="image"></p>
-<p>Cloud9 から Go To Dashboard をクリックして AWS コンソールを開きます。</p>
-<h2 id="aws-コンソールでリージョンは東京（ap-northeast-1）にします"><a name="aws-コンソールでリージョンは東京（ap-northeast-1）にします" class="plugin-anchor" href="#aws-コンソールでリージョンは東京（ap-northeast-1）にします"><i class="fa fa-link" aria-hidden="true"></i></a>AWS コンソールでリージョンは東京（ap-northeast-1）にします</h2>
-<p><img src="https://i.gyazo.com/8cd57a12e35ea6eacafa2a283efee9b2.png" alt="image"></p>
-<p>AWS コンソールでリージョンは東京（ap-northeast-1）にします。</p>
-<p><img src="https://i.gyazo.com/e20eaff92bf0f6609e322cdcff83b78b.png" alt="image"></p>
-<p>もし別のリージョンが選択されている場合は、東京を選択しなおします。</p>
-<h2 id="amplifyhomes-を選択"><a name="amplifyhomes-を選択" class="plugin-anchor" href="#amplifyhomes-を選択"><i class="fa fa-link" aria-hidden="true"></i></a>amplifyhomes を選択</h2>
-<p><img src="https://i.gyazo.com/1b3d1ab7972a795c04efd18aa4ef6611.png" alt="image"></p>
-<p>上部の検索エリアで AWS Amplify で検索して、AWS Amplify が出てきたらクリックします。</p>
-<p>AWS Amplify の一覧ページへ移動します。</p>
-<p><img src="https://i.gyazo.com/895f542c07ca36bba8f8bb8490390f00.png" alt="image"></p>
-<p>一覧から amplifyhomes を選択します。</p>
-<h2 id="自分の環境を探します"><a name="自分の環境を探します" class="plugin-anchor" href="#自分の環境を探します"><i class="fa fa-link" aria-hidden="true"></i></a>自分の環境を探します</h2>
-<p><img src="https://i.gyazo.com/4553d355fd1b0aad8095d74bbac42343.png" alt="image"></p>
-<p>自分の名前の環境名を探します。</p>
-<h2 id="amplify-studio-のセットアップ"><a name="amplify-studio-のセットアップ" class="plugin-anchor" href="#amplify-studio-のセットアップ"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify Studio のセットアップ</h2>
-<p><img src="https://i.gyazo.com/09f2198cd41ec642401e660239a2217b.png" alt="image"></p>
-<p>Set up Amplify Studio ボタンをクリックします。</p>
-<p><img src="https://i.gyazo.com/da591673b02bb21e3df60a302dbc41d5.png" alt="image"></p>
-<p>Amplify Studio の詳細画面に移動します。</p>
-<p><img src="https://i.gyazo.com/fa143ed10847d5ea78a7f0b634f72618.png" alt="image"></p>
-<p>Amplify Studio 有効化のスイッチはこちらです。</p>
-<p><img src="https://i.gyazo.com/d5b28ca40072644f56bc7f93e60f55a1.png" alt="image"></p>
-<p>スイッチをクリックすると進行中になり待ちます。</p>
-<p><img src="https://i.gyazo.com/4e236aa61352f51c02a88d1c1f18de2e.png" alt="image"></p>
-<p>On になることを確認します。</p>
-<h2 id="amplify-studio-起動"><a name="amplify-studio-起動" class="plugin-anchor" href="#amplify-studio-起動"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify Studio 起動</h2>
-<p><img src="https://i.gyazo.com/b367ac5e9ba1e89a32243bb61c9ddcd3.png" alt="image"></p>
-<p>上部のナビゲーションから amplifyhomes をクリックします。</p>
-<p><img src="https://i.gyazo.com/d2d8f92d2bb407726d451d544e4c4659.png" alt="image"></p>
-<p>Backend environments をクリックします。</p>
-<p><img src="https://i.gyazo.com/2424862d87f2f1b02fb3d813f6bc32b3.png" alt="image"></p>
-<p>Set up Amplify Studio ボタンだった場所が Studio を起動するボタンとなっているのでクリックします。</p>
-<p><img src="https://i.gyazo.com/d6756b60f26be143efa9a42f161d22cd.png" alt="image"></p>
-<p>Amplify Studio が別のタブで起動しました。</p>
+                                <h1 id="環境の削除"><a name="環境の削除" class="plugin-anchor" href="#環境の削除"><i class="fa fa-link" aria-hidden="true"></i></a>環境の削除</h1>
+<p>今回使った Cloud9 と Amplify アプリを削除します。</p>
+<h2 id="amplify-アプリの削除"><a name="amplify-アプリの削除" class="plugin-anchor" href="#amplify-アプリの削除"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify アプリの削除</h2>
+<p>Cloud9 のコンソールで、以下のコマンドを実行します。</p>
+<pre><code>amplify delete
+</code></pre><p>今回の Amplify アプリに関係する環境を丸ごと削除する強力なコマンドです。</p>
+<pre><code>Are you sure you want to continue? This CANNOT be undone. (This will delete all the environments of the project from the cloud and wipe out all the local files created by Amplify CLI)
+</code></pre><p>と出るので Yes を入力して Enter キーを押して削除します。</p>
+<p>削除できたら AWS コンソール上でも Amplify アプリが削除されたか確認しておきましょう。</p>
+<h2 id="cloud9-の削除"><a name="cloud9-の削除" class="plugin-anchor" href="#cloud9-の削除"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 の削除</h2>
+<p>今回のハンズオンで使った Cloud9 を削除します。</p>
+<p><img src="https://i.gyazo.com/3094017a352f16f501f13f965bcd809a.png" alt="image"></p>
+<p>Cloud9 の一覧から今回の Cloud9 を右上のチェックをクリックして選択します。</p>
+<p><img src="https://i.gyazo.com/763344a661856dd564a2baf9cd9b6dc8.png" alt="image"></p>
+<p>Delete ボタンをクリックします。</p>
+<p><img src="https://i.gyazo.com/c1d11588dafdb006ca6c8cc8a78aa2ba.png" alt="image"></p>
+<p>本当に削除するか聞かれるので入力欄に Delete を入力して Delete をクリックします。</p>
+<p>削除できたら一覧から削除されていることも確認しましょう。</p>
+<p>おつかれさまでした。このあとは、時間があれば、質疑応答やフォローを行っていく予定です。</p>
+<h2 id="参考：何もかも消す場合はこちら"><a name="参考：何もかも消す場合はこちら" class="plugin-anchor" href="#参考：何もかも消す場合はこちら"><i class="fa fa-link" aria-hidden="true"></i></a>参考：何もかも消す場合はこちら</h2>
+<p>このあと、ハッカソンで使っていくので Amplify アカウントや、それにともなうディープな削除は行いませんが、削除したくなった場合は、以下を参考に対応してみてください。</p>
+<ul>
+<li><a href="https://zenn.dev/shigeru_oda/books/521fa5a5a9c558c6275d/viewer/delete" target="_blank">環境削除｜AWS Amplify Studio + Figmaハンズオン</a></li>
+</ul>
 
                                 
                                 </section>
@@ -380,12 +378,12 @@
 
             
                 
-                <a href="03-amplify-basic-create.html" class="navigation navigation-prev " aria-label="Previous page: Amplifyのベース作成">
+                <a href="10-react-extend-code.html" class="navigation navigation-prev " aria-label="Previous page: React のコードによる拡張">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="05-amplify-studio-setting.html" class="navigation navigation-next " aria-label="Next page: Amplify Studio の設定">
+                <a href="90-production-memo.html" class="navigation navigation-next " aria-label="Next page: 制作メモ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -396,7 +394,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の準備","level":"1.7","depth":1,"next":{"title":"Amplify Studio の設定","level":"1.8","depth":1,"path":"05-amplify-studio-setting.md","ref":"05-amplify-studio-setting.md","articles":[]},"previous":{"title":"Amplifyのベース作成","level":"1.6","depth":1,"path":"03-amplify-basic-create.md","ref":"03-amplify-basic-create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"04-amplify-studio-setup.md","mtime":"2022-08-25T13:55:24.023Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T01:03:28.524Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"環境の削除","level":"1.13","depth":1,"next":{"title":"制作メモ","level":"1.14","depth":1,"path":"90-production-memo.md","ref":"90-production-memo.md","articles":[]},"previous":{"title":"React のコードによる拡張","level":"1.12","depth":1,"path":"10-react-extend-code.md","ref":"10-react-extend-code.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"11-environment-delete.md","mtime":"2022-08-26T00:47:50.521Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T01:54:59.294Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
