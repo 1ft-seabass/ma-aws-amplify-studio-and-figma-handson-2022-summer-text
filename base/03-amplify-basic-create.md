@@ -48,15 +48,13 @@ npm i
 
 ## Amplify 環境の初期設定
 
-### まず自分の環境の名前を決めます
+### まず自分の環境の名前（英数字）を思い出す
 
 このあと、みなさん、それぞれの環境で Amplify を作成します。
 
-自分の環境の名前を決めておきましょう。
+まず自分の環境の名前（英数字）を思い出しましょう。
 
-Cloud9 の時より短い自分の名前の略称を2～10文字の半角英数字で決めます。
-
-私の場合は tseigo としました。
+私の場合は tanaka-seigo としました。
 
 このあとこれを自分の環境の名前として使っていきましょう。
 
@@ -70,11 +68,13 @@ Cloud9 の時より短い自分の名前の略称を2～10文字の半角英数�
 
 amplify/.config/project-config.json をダブルクリックしてエディタで開きます。
 
-![image](https://i.gyazo.com/d82342a7bdf62c1b3a05ba6b0ba92b76.png)
+（画像）
 
-projectName の amplifyhomes に自分の名前の略称を加えて保存します。
+projectName の amplifyhomes に自分の名前の略称を加えて保存します。tanaka-seigo の場合は amplifyhomes-tanaka-seigo とします。
 
-## ここでコマンドの中断 Ctrl + C も伝えられたら伝える
+環境名変更はこれで完了です。
+
+### ここでコマンドの中断 Ctrl + C も伝えられたら伝える
 
 ### 設定開始
 
@@ -86,11 +86,9 @@ amplify init
 
 ### Enter a name for the environment (dev) 
 
-環境の名前を入力してくださいと聞かれます。
+環境の名前を入力してくださいと聞かれます。これは dev のままで良いのでそのまま Enter キーを押します。
 
-ここで、先ほど決めた自分の環境の名前を使っていきます。自分の環境の名前を入力して Enter キーを押します。
-
-↑ 重要
+今回の Amplify 環境の「配下で」開発するときの、開発用の環境の名前です。
 
 ### ? Choose your default editor: (Use arrow keys)
 
