@@ -6,15 +6,43 @@
 
 こちらの手順を進めていきます。
 
+## Cloud9 で作業
+
+![image](https://i.gyazo.com/1eb071e98cf07c07678c6ab076eded13.png)
+
+AWS コンソールの上部から Cloud9 を検索して呼び出しましょう。
+
+![image](https://i.gyazo.com/73853d74f3041c9fd800d9c17addf619.png)
+
+一覧から、今回の Cloud9 を選択して Open IDE ボタンをクリックします。
+
 ![image](https://i.gyazo.com/fb4e7349d345849648d070b817912711.png)
 
-今回の Cloud9 を開きましょう。
+今回の Cloud9 を開きました。先ほど作業していたものがちゃんとあるはずです。
+
+## ターミナルでフォルダの移動
+
+![image](https://i.gyazo.com/2ba05cd3815d6018fd960cdbe74b7542.png)
+
+Cloud9 に入った時にターミナルでの狙っているフォルダが作業フォルダになっていない場合は移動します。
 
 ```
 cd amplify-homes-handson-sample-202208
 ```
 
 ターミナルでこちらのコマンドを入力して、React や Amplify の設定した対象のフォルダへ移動します。
+
+（対応してもらう前に、状況聞いてみる）
+
+![image](https://i.gyazo.com/17f5f190cdb7486383a771b72b97c73f.png)
+
+あらためて、作業フォルダが `~/environment/amplify-homes-handson-sample-202208` 担っているか確認して進めましょう。違う場所の場合、次の amplify pull でエラーやアラートが出ます。
+
+## amplify pull コマンドをクリップボードにコピー
+
+![image](https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png)
+
+NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコマンドを、右側にあるコピーボタンでコピーします。
 
 ## src/App.jsの修正
 
@@ -41,7 +69,14 @@ export default App;
 
 こちらのソースコードに差し替えます。
 
+具体的には、元のソースから以下を行っています。
+
+- `import { NewHomes, NavBar, MarketingFooter } from './ui-components'` という今回使うコンポーネントが呼び出されたり
+- `<NavBar />` `<NewHomes />` `<MarketingFooter />` が表示部分 App に配置されています。
+
 ## Amplify に publish
+
+この変更を、いよいよ Amplify のホストに反映してみましょう。
 
 ```
 amplify publish

@@ -2,7 +2,7 @@
 
 Amplify Studio の設定を進めます。
 
-## 別のタブで Figma にログインしておきます
+## 別のタブで Figma にログイン
 
 ![image](https://i.gyazo.com/a7824e2fcbc836a4f8cbd510e6d8bb92.png)
 
@@ -13,6 +13,16 @@ Amplify Studio の設定を進めます。
 右上の Login ボタンをクリックして、ログインします。
 
 （UI Kit のコピー時にログインすると、ダッシュボードにもどって分かりにくくなるので、先にログインしてます。）
+
+## Figma の言語設定が English かどうかを確認
+
+[Figmaが日本版をリリース、英語以外の言語へのローカライズは初 | gihyo.jp](https://gihyo.jp/article/2022/07/figma220727)
+
+最近、日本語もサポートされましたが、まだまだ文献が少なく、つまづいたときに解決しにくく、進めにくいところがあります。
+
+![image](https://i.gyazo.com/58979aff0be4921eb350d4b3bcb5a66d.png)
+
+今回が右上の言語設定から English を選択して英語で設定します。
 
 ## Data の設定
 
@@ -65,6 +75,8 @@ Get a copy ボタンをクリックします。
 ![image](https://i.gyazo.com/5747155663755067a29cb071063a66d9.png)
 
 しばらくボタンがローディングでくるくる回って、このように Figma で AWS Amplify UI Kit が読み込まれたプロジェクトが表示されます。
+
+これで Amplify Studio 用の Figma ファイルの準備ができました。設定していきましょう。
 
 ## 余談
 

@@ -22,7 +22,7 @@ Paste your Figma file link に注目します。
 
 ![image](https://i.gyazo.com/84cec8ff5599ec4ac177569e2e07d8a6.png)
 
-Amplify Atudio 側から Figma 側にアクセス許可が聞かれるので Allow access ボタンをクリックします。
+AWS と Figma の連携初回は、Amplify Atudio 側から Figma 側にアクセス許可が聞かれるので Allow access ボタンをクリックします。
 
 ![image](https://i.gyazo.com/70df26122c027990ba0e8b86140fdfbd.png)
 
@@ -38,7 +38,7 @@ Skip theme updates ボタンをクリックします。
 
 ## コンポーネントの受け入れ
 
-コンポーネントは HomeCard ・ NavBar ・ MarketingFooter だけ受け入れます。ほかは Reject します。
+コンポーネントは HomeCard ・ NavBar ・ MarketingFooter だけ受け入れます。ほかは Reject or Skip します。
 
 ![image](https://i.gyazo.com/b1884b94d49efad74c51db9b67da59d0.png)
 
@@ -60,9 +60,13 @@ NavBar も Accept ボタンをクリックして受け入れます。
 
 取り込みが成功して、UI Library 画面が表示されて Components に HomeCard ・ NavBar ・ MarketingFooter がいます。
 
-![image](https://i.gyazo.com/db25ddf024977de45ff07eb87629da88.jpg)
+### 間違って Accept したものがあれば、あとでも削除できます
 
 間違って Accept したものがあれば、この画面で Delete していきます。
+
+![image](https://i.gyazo.com/db25ddf024977de45ff07eb87629da88.jpg)
+
+とはいえ、削除するものは少ないほうがよいので、なるべく Reject or Skip で対応しておきましょう。
 
 ## Content
 
@@ -165,7 +169,7 @@ Elements tree で image をクリックします。
 
 ![image](https://i.gyazo.com/ca5ba5e6b7ee7d1aac185d48b0681391.png)
 
-image を選択した状態で Set prop をクリックします。
+image を選択した状態で Child properties 項目で Set prop をクリックします。
 
 ![image](https://i.gyazo.com/ce0921f218f42d6b06c665ccc1c15a16.png)
 
@@ -252,6 +256,8 @@ UI Library をクリックして編集画面から戻ります。
 
 削除できたら「コンポーネントをデータに応じて並べる NewHomes コレクションを作成する」から再開します。
 
+それでもうまく作られないときは、Grid 変更だけ行います。一度 React 反映後に余白調整します。
+
 ## コンポーネントコードの取得
 
 ![image](https://i.gyazo.com/1cb9f35fc517e26ddc4156bc59f728b3.png)
@@ -260,6 +266,6 @@ Get component code ボタンをクリックします。
 
 ![image](https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png)
 
-NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコードをコピーします。
+NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので、この画面のまま、次の手順に進みます。
 
-
+はじめての React の準備と Amplify デプロイがうまくいきました。では少し、次の章で内容を変更してみましょう。

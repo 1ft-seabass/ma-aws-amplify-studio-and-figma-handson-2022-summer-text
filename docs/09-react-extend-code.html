@@ -315,6 +315,8 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="react-のコードによる拡張"><a name="react-のコードによる拡張" class="plugin-anchor" href="#react-のコードによる拡張"><i class="fa fa-link" aria-hidden="true"></i></a>React のコードによる拡張</h1>
+<p><img src="https://i.gyazo.com/5ea818fa97baf3734abdce39c0c2b523.jpg" alt="image"></p>
+<p>React のコードによる拡張で、コンポーネントにページングと幅変更でコンテンツが調整される仕組みを追加してみます。</p>
 <h2 id="参考記事"><a name="参考記事" class="plugin-anchor" href="#参考記事"><i class="fa fa-link" aria-hidden="true"></i></a>参考記事</h2>
 <ul>
 <li><a href="https://docs.amplify.aws/console/uibuilder/override/" target="_blank">UI development (React) - Extend via code - AWS Amplify Docs</a><ul>
@@ -339,6 +341,11 @@ function App() {
 
 export default App;
 </code></pre><p>こちらのソースコードに差し替えます。</p>
+<p>具体的には、元のソースから以下を行っています。</p>
+<ul>
+<li>NavBar や MarketingFooter が横幅に合うように <code>width={&quot;100vw&quot;}</code> を追加</li>
+<li>NewHomes にページング機能を追加するために <code>isPaginated itemsPerPage={3}</code> を追加</li>
+</ul>
 <p>Amplify に publish</p>
 <pre><code class="lang-js">amplify publish
 </code></pre>
@@ -353,6 +360,8 @@ https://**********.*****************.amplifyapp.com
 <p>ターミナルでデプロイされた URL を Open で開きます。</p>
 <p><img src="https://i.gyazo.com/5ea818fa97baf3734abdce39c0c2b523.jpg" alt="image"></p>
 <p>ページングと幅変更でコンテンツが調整される表示が確認できるはずです！</p>
+<p>React のコードによる拡張、これでひとまずの流れはできました。</p>
+<p>最後に環境の削除方法を学びましょう。</p>
 
                                 
                                 </section>
@@ -396,7 +405,7 @@ https://**********.*****************.amplifyapp.com
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React のコードによる拡張","level":"1.12","depth":1,"next":{"title":"環境の削除","level":"1.13","depth":1,"path":"10-environment-delete.md","ref":"10-environment-delete.md","articles":[]},"previous":{"title":"React の準備と Amplify デプロイ","level":"1.11","depth":1,"path":"08-react-setup-and-deploy.md","ref":"08-react-setup-and-deploy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"09-react-extend-code.md","mtime":"2022-08-21T13:19:06.610Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T14:58:55.684Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React のコードによる拡張","level":"1.12","depth":1,"next":{"title":"環境の削除","level":"1.13","depth":1,"path":"10-environment-delete.md","ref":"10-environment-delete.md","articles":[]},"previous":{"title":"React の準備と Amplify デプロイ","level":"1.11","depth":1,"path":"08-react-setup-and-deploy.md","ref":"08-react-setup-and-deploy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"09-react-extend-code.md","mtime":"2022-08-26T00:47:33.255Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T00:47:56.369Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

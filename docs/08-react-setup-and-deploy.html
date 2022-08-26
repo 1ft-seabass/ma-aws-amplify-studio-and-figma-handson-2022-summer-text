@@ -318,10 +318,24 @@
 <p>さきほどの Figma のコンポーネントを React に準備して Amplify デプロイを行います。</p>
 <p><img src="https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png" alt="image"></p>
 <p>こちらの手順を進めていきます。</p>
+<h2 id="cloud9-で作業"><a name="cloud9-で作業" class="plugin-anchor" href="#cloud9-で作業"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud9 で作業</h2>
+<p><img src="https://i.gyazo.com/1eb071e98cf07c07678c6ab076eded13.png" alt="image"></p>
+<p>AWS コンソールの上部から Cloud9 を検索して呼び出しましょう。</p>
+<p><img src="https://i.gyazo.com/73853d74f3041c9fd800d9c17addf619.png" alt="image"></p>
+<p>一覧から、今回の Cloud9 を選択して Open IDE ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/fb4e7349d345849648d070b817912711.png" alt="image"></p>
-<p>今回の Cloud9 を開きましょう。</p>
+<p>今回の Cloud9 を開きました。先ほど作業していたものがちゃんとあるはずです。</p>
+<h2 id="ターミナルでフォルダの移動"><a name="ターミナルでフォルダの移動" class="plugin-anchor" href="#ターミナルでフォルダの移動"><i class="fa fa-link" aria-hidden="true"></i></a>ターミナルでフォルダの移動</h2>
+<p><img src="https://i.gyazo.com/2ba05cd3815d6018fd960cdbe74b7542.png" alt="image"></p>
+<p>Cloud9 に入った時にターミナルでの狙っているフォルダが作業フォルダになっていない場合は移動します。</p>
 <pre><code>cd amplify-homes-handson-sample-202208
 </code></pre><p>ターミナルでこちらのコマンドを入力して、React や Amplify の設定した対象のフォルダへ移動します。</p>
+<p>（対応してもらう前に、状況聞いてみる）</p>
+<p><img src="https://i.gyazo.com/17f5f190cdb7486383a771b72b97c73f.png" alt="image"></p>
+<p>あらためて、作業フォルダが <code>~/environment/amplify-homes-handson-sample-202208</code> 担っているか確認して進めましょう。違う場所の場合、次の amplify pull でエラーやアラートが出ます。</p>
+<h2 id="amplify-pull-コマンドをクリップボードにコピー"><a name="amplify-pull-コマンドをクリップボードにコピー" class="plugin-anchor" href="#amplify-pull-コマンドをクリップボードにコピー"><i class="fa fa-link" aria-hidden="true"></i></a>amplify pull コマンドをクリップボードにコピー</h2>
+<p><img src="https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png" alt="image"></p>
+<p>NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコマンドを、右側にあるコピーボタンでコピーします。</p>
 <h2 id="srcappjsの修正"><a name="srcappjsの修正" class="plugin-anchor" href="#srcappjsの修正"><i class="fa fa-link" aria-hidden="true"></i></a>src/App.jsの修正</h2>
 <p><img src="https://i.gyazo.com/fc5eb744994cc609ad766563f80fd976.png" alt="image"></p>
 <p>src/App.js を変更します。</p>
@@ -341,7 +355,13 @@
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
 </code></pre>
 <p>こちらのソースコードに差し替えます。</p>
+<p>具体的には、元のソースから以下を行っています。</p>
+<ul>
+<li><code>import { NewHomes, NavBar, MarketingFooter } from &apos;./ui-components&apos;</code> という今回使うコンポーネントが呼び出されたり</li>
+<li><code>&lt;NavBar /&gt;</code> <code>&lt;NewHomes /&gt;</code> <code>&lt;MarketingFooter /&gt;</code> が表示部分 App に配置されています。</li>
+</ul>
 <h2 id="amplify-に-publish"><a name="amplify-に-publish" class="plugin-anchor" href="#amplify-に-publish"><i class="fa fa-link" aria-hidden="true"></i></a>Amplify に publish</h2>
+<p>この変更を、いよいよ Amplify のホストに反映してみましょう。</p>
 <pre><code>amplify publish
 </code></pre><p>こちらのコマンドで Amplify に反映します。</p>
 <pre><code>Do you still want to publish the frontend?
@@ -403,7 +423,7 @@ https://**********.*****************.amplifyapp.com
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React の準備と Amplify デプロイ","level":"1.11","depth":1,"next":{"title":"React のコードによる拡張","level":"1.12","depth":1,"path":"09-react-extend-code.md","ref":"09-react-extend-code.md","articles":[]},"previous":{"title":"Amplify Studio の設定","level":"1.10","depth":1,"path":"07-figma-amplify-studio-setting.md","ref":"07-figma-amplify-studio-setting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"08-react-setup-and-deploy.md","mtime":"2022-08-21T13:18:22.798Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T14:58:55.684Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React の準備と Amplify デプロイ","level":"1.11","depth":1,"next":{"title":"React のコードによる拡張","level":"1.12","depth":1,"path":"09-react-extend-code.md","ref":"09-react-extend-code.md","articles":[]},"previous":{"title":"Amplify Studio の設定","level":"1.10","depth":1,"path":"07-figma-amplify-studio-setting.md","ref":"07-figma-amplify-studio-setting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"08-react-setup-and-deploy.md","mtime":"2022-08-26T00:44:52.315Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T00:47:56.369Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

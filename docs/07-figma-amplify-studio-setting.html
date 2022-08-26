@@ -326,7 +326,7 @@
 <p><img src="https://i.gyazo.com/70875b5e15370f5aa988fbe8c527e6d7.png" alt="image"></p>
 <p>こちらに、さきほどの Figma ファイルの URLをコピーアンドペーストして、Continue ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/84cec8ff5599ec4ac177569e2e07d8a6.png" alt="image"></p>
-<p>Amplify Atudio 側から Figma 側にアクセス許可が聞かれるので Allow access ボタンをクリックします。</p>
+<p>AWS と Figma の連携初回は、Amplify Atudio 側から Figma 側にアクセス許可が聞かれるので Allow access ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/70df26122c027990ba0e8b86140fdfbd.png" alt="image"></p>
 <p>Fetching from Figma と表示されてロードが開始します。</p>
 <p><img src="https://i.gyazo.com/b6544a19764ac76d9bb33ac0149fed15.png" alt="image"></p>
@@ -334,7 +334,7 @@
 <p><img src="https://i.gyazo.com/06ffb828df72babe333841a1e5b73a0e.png" alt="image"></p>
 <p>Skip theme updates ボタンをクリックします。</p>
 <h2 id="コンポーネントの受け入れ"><a name="コンポーネントの受け入れ" class="plugin-anchor" href="#コンポーネントの受け入れ"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントの受け入れ</h2>
-<p>コンポーネントは HomeCard ・ NavBar ・ MarketingFooter だけ受け入れます。ほかは Reject します。</p>
+<p>コンポーネントは HomeCard ・ NavBar ・ MarketingFooter だけ受け入れます。ほかは Reject or Skip します。</p>
 <p><img src="https://i.gyazo.com/b1884b94d49efad74c51db9b67da59d0.png" alt="image"></p>
 <p>すると HomeCard のコンポーネントの許可ページに移動するので Accept ボタンをクリックして受け入れます。</p>
 <p><img src="https://i.gyazo.com/7e78de5a20a37a8d88e026325af9b460.png" alt="image"></p>
@@ -345,8 +345,10 @@
 <p>コンポーネントの受け入れ設定が終わり Save Components ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/8d617a6f7f2d23e322e2ec59852d23d7.png" alt="image"></p>
 <p>取り込みが成功して、UI Library 画面が表示されて Components に HomeCard ・ NavBar ・ MarketingFooter がいます。</p>
-<p><img src="https://i.gyazo.com/db25ddf024977de45ff07eb87629da88.jpg" alt="image"></p>
+<h3 id="間違って-accept-したものがあれば、あとでも削除できます"><a name="間違って-accept-したものがあれば、あとでも削除できます" class="plugin-anchor" href="#間違って-accept-したものがあれば、あとでも削除できます"><i class="fa fa-link" aria-hidden="true"></i></a>間違って Accept したものがあれば、あとでも削除できます</h3>
 <p>間違って Accept したものがあれば、この画面で Delete していきます。</p>
+<p><img src="https://i.gyazo.com/db25ddf024977de45ff07eb87629da88.jpg" alt="image"></p>
+<p>とはいえ、削除するものは少ないほうがよいので、なるべく Reject or Skip で対応しておきましょう。</p>
 <h2 id="content"><a name="content" class="plugin-anchor" href="#content"><i class="fa fa-link" aria-hidden="true"></i></a>Content</h2>
 <p><img src="https://i.gyazo.com/7d5c00fd904a8f111422886131cc8c47.png" alt="image"></p>
 <p>左メニューで Content をクリックします。</p>
@@ -405,7 +407,7 @@
 <p><img src="https://i.gyazo.com/91d096f74e6bca4678a2449e373c8b68.png" alt="image"></p>
 <p>Elements tree で image をクリックします。</p>
 <p><img src="https://i.gyazo.com/ca5ba5e6b7ee7d1aac185d48b0681391.png" alt="image"></p>
-<p>image を選択した状態で Set prop をクリックします。</p>
+<p>image を選択した状態で Child properties 項目で Set prop をクリックします。</p>
 <p><img src="https://i.gyazo.com/ce0921f218f42d6b06c665ccc1c15a16.png" alt="image"></p>
 <p>内容は、</p>
 <ul>
@@ -471,11 +473,13 @@
 <p><img src="https://i.gyazo.com/0b5af0806dbee49fffef5ab15d8d71ed.png" alt="image"></p>
 <p> NewHomes を選択した状態で Delete ボタンをクリックします。</p>
 <p>削除できたら「コンポーネントをデータに応じて並べる NewHomes コレクションを作成する」から再開します。</p>
+<p>それでもうまく作られないときは、Grid 変更だけ行います。一度 React 反映後に余白調整します。</p>
 <h2 id="コンポーネントコードの取得"><a name="コンポーネントコードの取得" class="plugin-anchor" href="#コンポーネントコードの取得"><i class="fa fa-link" aria-hidden="true"></i></a>コンポーネントコードの取得</h2>
 <p><img src="https://i.gyazo.com/1cb9f35fc517e26ddc4156bc59f728b3.png" alt="image"></p>
 <p>Get component code ボタンをクリックします。</p>
 <p><img src="https://i.gyazo.com/c7f10c1770ec6d51680c999f837c2557.png" alt="image"></p>
-<p>NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコードをコピーします。</p>
+<p>NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので、この画面のまま、次の手順に進みます。</p>
+<p>はじめての React の準備と Amplify デプロイがうまくいきました。では少し、次の章で内容を変更してみましょう。</p>
 
                                 
                                 </section>
@@ -519,7 +523,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.10","depth":1,"next":{"title":"React の準備と Amplify デプロイ","level":"1.11","depth":1,"path":"08-react-setup-and-deploy.md","ref":"08-react-setup-and-deploy.md","articles":[]},"previous":{"title":"Figma の準備","level":"1.9","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"07-figma-amplify-studio-setting.md","mtime":"2022-08-21T13:13:35.353Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-25T14:58:55.684Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Amplify Studio の設定","level":"1.10","depth":1,"next":{"title":"React の準備と Amplify デプロイ","level":"1.11","depth":1,"path":"08-react-setup-and-deploy.md","ref":"08-react-setup-and-deploy.md","articles":[]},"previous":{"title":"Figma の準備","level":"1.9","depth":1,"path":"06-figma-setup.md","ref":"06-figma-setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"07-figma-amplify-studio-setting.md","mtime":"2022-08-26T00:42:11.302Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2022-08-26T00:47:56.369Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
