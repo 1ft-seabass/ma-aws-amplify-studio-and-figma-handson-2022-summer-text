@@ -1,4 +1,4 @@
-# Amplify の初期設定
+# Amplify の初期設定（新規）
 
 ![image](https://i.gyazo.com/f621a122e26e1bf3d039c6f35e1e90a7.png)
 
@@ -10,7 +10,15 @@ Cloud9 から Amplify を作れる AWS IAM ユーザーの作成をします。
 
 ![image](https://i.gyazo.com/7b978d74330a39631e1cc9431fe62f49.png)
 
-Cloud9 のターミナルで作業を進めます。
+この作業は Cloud9 のターミナルで作業を進めます。
+
+## 初めて Amplify IAM ユーザーをつくる場合と、すでに Amplify 用の IAM ユーザーがある場合で流れが変わります
+
+- 初めて IAM ユーザーをつくる場合
+  - このまま、以下の流れを進めます。
+- すでに Amplify 用の IAM ユーザーがある場合
+  - 一度、このハンズオンを済ませるなどしてすでに Amplify 用の IAM ユーザーがある場合は [Amplify の初期設定（既存）](03-amplify-account-create-1.md) に進みます。
+
 
 ## Amplify CLI インストール
 
@@ -67,10 +75,6 @@ Enter キーを押します。
 ![image](https://i.gyazo.com/968760e7cc5cae519c53185d46435e41.png)
 
 緑色の URL の部分をクリックしましょう。
-
-新しくユーザーを作る場合は、以下「AWS コンソール（新しくユーザーを作る場合）」を進めます。
-
-すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある場合は「すでに自分の Amplify ユーザーを作っていてアクセスキー ID とシークレットアクセスキーがある（すでにユーザーがある場合）」に進みます。
 
 ## AWS コンソール（新しくユーザーを作る場合）
 
@@ -198,3 +202,4 @@ Successfully set up the new user. とでて、この Cloud9 での Amplify 初�
 
 大切に保管しておきましょう。
 
+「Amplify のベース作成」へ進みます。
