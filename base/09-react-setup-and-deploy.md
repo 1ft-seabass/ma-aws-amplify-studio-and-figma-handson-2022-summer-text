@@ -48,6 +48,10 @@ cd amplify-homes-handson-sample-202208
 
 NewHomes コンポーネントを Cloud9 に準備した React ソースコードに割り当てる手順が書いてあるので 1. に書いてあるコマンドを、右側にあるコピーボタンでコピーします。
 
+コピーしたあと、Cloud9 にターミナルに貼り付けてコマンド実行をします。
+
+これで、NewHomes だけでなく NavBar ・ MarketingFooter が使えるようになります。
+
 ## src/App.jsの修正
 
 ![image](https://i.gyazo.com/fc5eb744994cc609ad766563f80fd976.png)
